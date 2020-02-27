@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/A_day24_mybatis_01_quickstart/A_day24_mybatis_01_quickstart.iml" filepath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/A_day24_mybatis_01_quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/A_day24_mybatis_02_curd_proxy.iml" filepath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/A_day24_mybatis_02_curd_proxy.iml" />
+    </modules>
+  </component>
+</project>

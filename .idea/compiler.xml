@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="A_day24_mybatis_01_quickstart" />
+        <module name="A_day24_mybatis_02_curd_proxy" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="A_day24_mybatis_01_quickstart" target="1.8" />
+      <module name="A_day24_mybatis_02_curd_proxy" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

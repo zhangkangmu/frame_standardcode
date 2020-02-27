@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--
+    配置数据库环境，用environments标签，里边可以有多个environment标签
+
+    每个environment：可以配置一个数据库的环境
+    environments标签的default属性：指定一个默认使用的数据库环境
+    -->
+    <environments default="heima87">
+        <!--配置一个数据库环境-->
+        <environment id="heima87">
+            <!--事务管理：固定值JDBC-->
+            <transactionManager type="JDBC"/>
+            <!--数据源：type值有  POOLED，UNPOOLED，JNDI-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///mybatis87"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+
+        <!--配置一个数据库环境-->
+        <!--<environment id="javaweb">
+            <transactionManager type=""></transactionManager>
+            <dataSource type=""></dataSource>
+        </environment>-->
+    </environments>
+
+    <!--映射器配置-->
+    <mappers>
+        <mapper resource="com/itheima/dao/UserDao.xml"/>
+        <!--<mapper resource="com/itheima/dao/RoseDao.xml"/>-->
+    </mappers>
+</configuration>

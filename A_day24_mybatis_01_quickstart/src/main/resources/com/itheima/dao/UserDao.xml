@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+一个映射器，要有一个映射配置文件。
+mapper标签：
+    namespace属性：配置对应的映射器，写全限定类名
+-->
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <!--
+    映射器里一个方法，要有一个对应的配置（statement），主要是配置SQL语句
+    要给查询方法配置，使用select标签
+    要给插入方法配置，使用insert标签
+    要给修改方法配置，使用update标签
+    要给删除方法配置，使用delete标签
+        id属性：对应的方法名称
+        resultType属性：执行查询语句后，把结果集里每一行数据封装成什么对象。写全限定类名
+    -->
+    <select id="queryAll" resultType="com.itheima.domain.User">
+        select * from user
+    </select>
+</mapper>
