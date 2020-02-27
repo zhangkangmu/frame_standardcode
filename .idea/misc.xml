@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/day24_mybatis1_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/day24_mybatis2_curd_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/pom.xml" />
       </list>
     </option>
   </component>
