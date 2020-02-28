@@ -63,7 +63,7 @@ public class MybatisCacheTest {
 
     /**
      * 测试二级缓存：是SqlSessionFactory提供的缓存区域
-     *      同类型映射器，可以共享缓存
+     *      同类型映射器接口，可以共享缓存
      *
      * 验证二级缓存：
      *  1. 用factory得到SqlSession对象：session1

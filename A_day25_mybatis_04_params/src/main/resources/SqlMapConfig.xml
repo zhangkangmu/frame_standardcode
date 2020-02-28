@@ -13,11 +13,10 @@
 <configuration>
 
     <typeAliases>
-        <!--
-        &lt;!&ndash;com.itheima.domain.User配置别名&ndash;&gt;
-        <typeAlias type="com.itheima.domain.User" alias="user"/>
-        &lt;!&ndash;com.itheima.domain.QueryVO配置别名&ndash;&gt;
-        <typeAlias type="com.itheima.domain.QueryVO" alias="vo"/>-->
+        <!--com.itheima.domain.User配置别名-->
+        <!--<typeAlias type="com.itheima.domain.User" alias="user"/>-->
+        <!--com.itheima.domain.QueryVO配置别名-->
+        <!--<typeAlias type="com.itheima.domain.QueryVO" alias="vo"/>-->
 
         <!--可以指定一个package。Mybatis会把这个package里所有JavaBean全部自动注册别名。类名即别名-->
         <package name="com.itheima.domain"/>

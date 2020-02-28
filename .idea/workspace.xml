@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a620a85-169d-452b-854f-7a348d09ab98" name="Default Changelist" comment="mybatis的第一天,入门的增删改查,还有lombox的简单使用">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_day24_mybatis_03_custom_design/A_day24_mybatis_03_custom_design.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_day25_mybatis_04_params/A_day25_mybatis_04_params.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/A_day25_mybatis_05_dynamicSQL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A_day25_mybatis_06_cache/A_day25_mybatis_06_cache.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="8a620a85-169d-452b-854f-7a348d09ab98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/A_day24_mybatis_01_quickstart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/A_day24_mybatis_01_quickstart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/A_day24_mybatis_02_curd_proxy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/A_day24_mybatis_02_curd_proxy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/com/itheima/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/com/itheima/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/src/main/resources/com/itheima/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/src/main/resources/com/itheima/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_day25_mybatis_06_cache/src/test/java/com/itheima/test/MybatisCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day25_mybatis_06_cache/src/test/java/com/itheima/test/MybatisCacheTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/day24_mybatis1_quickstart/target/" />
     <ignored path="$PROJECT_DIR$/day24_mybatis2_curd_proxy/target/" />
@@ -61,82 +41,47 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="4" />
-          <entry key="java" value="6" />
+          <entry key="java" value="12" />
           <entry key="pom" value="1" />
           <entry key="properties" value="2" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="20" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="12" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="27" />
+          <entry key="java" value="29" />
           <entry key="properties" value="6" />
-          <entry key="txt" value="33" />
-          <entry key="xml" value="19" />
+          <entry key="txt" value="51" />
+          <entry key="xml" value="449" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="27" />
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="JAVA" value="29" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="Properties" value="6" />
-          <entry key="XML" value="19" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="448" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/src/main/resources/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/test/java/com/itheima/test/MybatisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/resources/log4j.properties">
+        <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/src/test/java/com/itheima/test/MybatisCacheTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="68">
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -157,6 +102,8 @@
       <find>d:\axis.log</find>
       <find>d:\axis</find>
       <find>xis</find>
+      <find>User2</find>
+      <find>queryVo</find>
     </findStrings>
     <replaceStrings>
       <replace>root</replace>
@@ -180,6 +127,10 @@
         <option value="$PROJECT_DIR$/A_day25_mybatis_06_cache/pom.xml" />
         <option value="$PROJECT_DIR$/A_day25_mybatis_06_cache/src/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/com/itheima/dao/UserDao.xml" />
+        <option value="$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/src/main/resources/com/itheima/dao/UserDao.xml" />
+        <option value="$PROJECT_DIR$/A_day25_mybatis_06_cache/src/test/java/com/itheima/test/MybatisCacheTest.java" />
       </list>
     </option>
   </component>
@@ -233,77 +184,184 @@
           <expand>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_02_curd_proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
+              <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
+              <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
+              <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
+              <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itheima" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day24_mybatis_03_custom_design" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itheima" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_04_params" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_05_dynamicSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A_day25_mybatis_06_cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itheima" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,7 +373,7 @@
     <property name="SearchEverywhereHistoryKey" value="lombok&#9;ACTION&#9;LombokActionGroup" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582891261057" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582906896375" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/A_day25_mybatis_06_cache/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -369,7 +427,7 @@
       <workItem from="1582816178376" duration="2363000" />
       <workItem from="1582819202777" duration="360000" />
       <workItem from="1582819582594" duration="1478000" />
-      <workItem from="1582853581962" duration="8682000" />
+      <workItem from="1582853581962" duration="15973000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis的第一天,入门的增删改查,还有lombox的简单使用">
       <created>1582820273782</created>
@@ -378,11 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582820273782</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mybatis的第二天,参数,动态sql 以及 缓存">
+      <created>1582891327971</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582891327971</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12883000" />
+    <option name="totallyTimeSpent" value="20174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -452,7 +517,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mybatis的第一天,入门的增删改查,还有lombox的简单使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis的第一天,入门的增删改查,还有lombox的简单使用" />
+    <MESSAGE value="mybatis的第二天,参数,动态sql 以及 缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis的第二天,参数,动态sql 以及 缓存" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
@@ -589,17 +655,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/test/java/com/itheima/test/MybatisTest.java">
+    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="250">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/java/com/itheima/mybatis/io/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/test/java/com/itheima/test/MybatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/java/com/itheima/mybatis/sqlsession/SqlSessionFactoryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/src/main/java/com/itheima/mybatis/utils/XMLConfigBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="171" column="7" lean-forward="true" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/src/main/java/com/itheima/domain/QueryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/resources/com/itheima/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-443">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/src/main/resources/com/itheima/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/src/test/java/com/itheima/test/MybatisCacheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
         </state>
       </provider>
     </entry>

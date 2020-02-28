@@ -9,7 +9,7 @@
         if user里username不为空：SQL里才需要有 username like #{username}
         if user里sex不为空：SQL里才需要有  and sex = #{sex}
 
-    if标签的test属性里：写OGNL表达式，进行判断
+    if标签的test属性里：写OGNL表达式，进行判断 注意,里面多个条件使用and连接的
     -->
     <!--<select id="search" parameterType="user" resultType="user">
         select * from user where 1=1
@@ -21,6 +21,7 @@
         </if>
     </select>-->
 
+    <!--where会自动帮我们拼接and字段-->
     <select id="search" parameterType="user" resultType="user">
         select * from user
         <where>
@@ -35,6 +36,7 @@
 
     <!--
     select * from user where id in (1, 2, 3)
+    集合查询一般用这个foreach查询
     -->
     <select id="searchForeach" parameterType="queryVo" resultType="user">
         select * from user where
@@ -45,6 +47,8 @@
 
     <!--
     根据QueryVO里的username、sex、ids进行搜索
+    参数才区分大小写,封装结果是区分大小写的
+    这里可以重点看下:****多条件查询,数组啥的**
     -->
     <select id="search2" parameterType="queryVo" resultType="user">
         <!--select * from user-->
@@ -56,6 +60,7 @@
             <if test="sex != null and sex != ''">
                 and sex = #{sex}
             </if>
+
             <if test="ids != null and ids.length > 0">
                 <include refid="idsForeach"/>
             </if>
@@ -64,6 +69,7 @@
 
     <!--
     定义SQL片段：sql标签
+    注意:这个语句后面不要加;结束符号
     -->
     <sql id="selectUser">select * from user</sql>
     <sql id="idsForeach">
