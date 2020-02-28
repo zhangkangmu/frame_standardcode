@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <!--
+    select * from user where username like #{username} and sex = #{sex}
+        if user里username不为空：SQL里才需要有 username like #{username}
+        if user里sex不为空：SQL里才需要有  and sex = #{sex}
+
+    if标签的test属性里：写OGNL表达式，进行判断
+    -->
+    <!--<select id="search" parameterType="user" resultType="user">
+        select * from user where 1=1
+        <if test="username != null and username != '' ">
+            and username like #{username}
+        </if>
+        <if test="sex != null and sex != ''">
+            and sex = #{sex}
+        </if>
+    </select>-->
+
+    <select id="search" parameterType="user" resultType="user">
+        select * from user
+        <where>
+            <if test="username != null and username != '' ">
+                and username like #{username}
+            </if>
+            <if test="sex != null and sex != ''">
+                and sex = #{sex}
+            </if>
+        </where>
+    </select>
+
+    <!--
+    select * from user where id in (1, 2, 3)
+    -->
+    <select id="searchForeach" parameterType="queryVo" resultType="user">
+        select * from user where
+        <foreach collection="ids" open="id in (" item="id" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+
+    <!--
+    根据QueryVO里的username、sex、ids进行搜索
+    -->
+    <select id="search2" parameterType="queryVo" resultType="user">
+        <!--select * from user-->
+        <include refid="selectUser"/>
+        <where>
+            <if test="username != null and username != ''">
+                and username like #{username}
+            </if>
+            <if test="sex != null and sex != ''">
+                and sex = #{sex}
+            </if>
+            <if test="ids != null and ids.length > 0">
+                <include refid="idsForeach"/>
+            </if>
+        </where>
+    </select>
+
+    <!--
+    定义SQL片段：sql标签
+    -->
+    <sql id="selectUser">select * from user</sql>
+    <sql id="idsForeach">
+        <foreach collection="ids" open=" and id in(" item="id" separator="," close=")">
+            #{id}
+        </foreach>
+    </sql>
+</mapper>

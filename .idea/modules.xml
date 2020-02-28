@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/A_day24_mybatis_01_quickstart/A_day24_mybatis_01_quickstart.iml" filepath="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/A_day24_mybatis_01_quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/A_day24_mybatis_02_curd_proxy.iml" filepath="$PROJECT_DIR$/A_day24_mybatis_02_curd_proxy/A_day24_mybatis_02_curd_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_day24_mybatis_03_custom_design/A_day24_mybatis_03_custom_design.iml" filepath="$PROJECT_DIR$/A_day24_mybatis_03_custom_design/A_day24_mybatis_03_custom_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_day25_mybatis_04_params/A_day25_mybatis_04_params.iml" filepath="$PROJECT_DIR$/A_day25_mybatis_04_params/A_day25_mybatis_04_params.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/A_day25_mybatis_05_dynamicSQL.iml" filepath="$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/A_day25_mybatis_05_dynamicSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/A_day25_mybatis_06_cache.iml" filepath="$PROJECT_DIR$/A_day25_mybatis_06_cache/A_day25_mybatis_06_cache.iml" />
     </modules>
   </component>
 </project>

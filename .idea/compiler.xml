@@ -8,11 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="A_day24_mybatis_01_quickstart" />
         <module name="A_day24_mybatis_02_curd_proxy" />
+        <module name="A_day24_mybatis_03_custom_design" />
+        <module name="A_day25_mybatis_04_params" />
+        <module name="A_day25_mybatis_05_dynamicSQL" />
+        <module name="A_day25_mybatis_06_cache" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="A_day24_mybatis_01_quickstart" target="1.8" />
       <module name="A_day24_mybatis_02_curd_proxy" target="1.8" />
+      <module name="A_day24_mybatis_03_custom_design" target="1.8" />
+      <module name="A_day25_mybatis_04_params" target="1.8" />
+      <module name="A_day25_mybatis_05_dynamicSQL" target="1.8" />
+      <module name="A_day25_mybatis_06_cache" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

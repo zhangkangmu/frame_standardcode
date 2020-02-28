@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--
+注意：configuration标签里的子标签，是有顺序要求的。如果顺序错了，会报错
+    properties,
+    settings,
+    typeAliases,
+    environments,
+    mappers
+-->
+<configuration>
+
+    <typeAliases>
+        <!--
+        &lt;!&ndash;com.itheima.domain.User配置别名&ndash;&gt;
+        <typeAlias type="com.itheima.domain.User" alias="user"/>
+        &lt;!&ndash;com.itheima.domain.QueryVO配置别名&ndash;&gt;
+        <typeAlias type="com.itheima.domain.QueryVO" alias="vo"/>-->
+
+        <!--可以指定一个package。Mybatis会把这个package里所有JavaBean全部自动注册别名。类名即别名-->
+        <package name="com.itheima.domain"/>
+    </typeAliases>
+
+    <environments default="heima87">
+        <environment id="heima87">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///mybatiscase"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--映射器配置-->
+    <mappers>
+        <!--
+        1. mapper标签：resource指定映射文件的路径
+            有一个映射器，就要有一个映射文件，就要多一个mapper标签配置它的路径
+        2. mapper标签：class指定映射器的全限定类名
+            有一个映射器，就要有一个映射文件，就要多一个mapper标签配置映射器的全限定类名
+
+        3. package标签：指定一个包下的所有映射器，全部自动注册
+        -->
+
+        <!--<mapper resource="com/itheima/dao/UserDao.xml"/>
+        <mapper resource="com/itheima/dao/RoleDao.xml"/>
+        <mapper resource="com/itheima/dao/OrderDao.xml"/>-->
+
+
+        <!--<mapper class="com.itheima.dao.UserDao"/>-->
+
+        <package name="com.itheima.dao"/>
+    </mappers>
+</configuration>
