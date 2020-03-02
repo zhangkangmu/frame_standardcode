@@ -15,8 +15,8 @@ import java.io.InputStream;
 
 /**
  * Mybatis的缓存测试
- * @author liuyp
- * @date 2020/02/28
+ * @author zhangyuhong
+ * @date 2018/02/28
  */
 public class MybatisCacheTest {
     private UserDao userDao;

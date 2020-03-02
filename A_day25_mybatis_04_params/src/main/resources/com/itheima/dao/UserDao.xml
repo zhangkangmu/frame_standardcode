@@ -50,7 +50,7 @@
         select count(*) from user
     </select>
 
-    <!--SQL语句里，要从QueryVO里获取user对象，从user对象里获取username-->
+    <!--SQL语句里，要从QueryVO里获取user对象（是参数），从user对象里获取username-->
     <!--参数和resultType，写的都是别名-->
     <select id="searchByVo" parameterType="queryvo" resultType="user">
         select * from user where username like #{user.username}

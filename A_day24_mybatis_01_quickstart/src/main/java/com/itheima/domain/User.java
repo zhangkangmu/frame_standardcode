@@ -6,8 +6,8 @@ import java.util.Date;
 
 /**
  * Data注解：添加了get/set，tostring，equals...
- * @author liuyp
- * @date 2020/02/27
+ * @author zhangyuhong
+ * @date 2018/02/27
  */
 @Data
 public class User {

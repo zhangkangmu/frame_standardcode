@@ -6,8 +6,8 @@ import com.itheima.domain.User;
 import java.util.List;
 
 /**
- * @author liuyp
- * @date 2020/02/28
+ * @author zhangyuhong
+ * @date 2018/02/28
  */
 public interface UserDao {
 

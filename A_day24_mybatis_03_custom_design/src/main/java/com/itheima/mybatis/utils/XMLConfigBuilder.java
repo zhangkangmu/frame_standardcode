@@ -130,7 +130,7 @@ public class XMLConfigBuilder {
             Map<String,Mapper> mappers = new HashMap<String,Mapper>();
             //1.根据路径获取字节输入流
             in = Resources.getResourceAsStream(mapperPath);
-            //2.根据字节输入流获取Document对象
+            //2.根据字节输入流获取Docummapper.xml ent对象
             SAXReader reader = new SAXReader();
             Document document = reader.read(in);
             //3.获取根节点

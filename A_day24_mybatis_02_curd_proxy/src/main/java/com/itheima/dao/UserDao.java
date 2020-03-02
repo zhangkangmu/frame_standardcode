@@ -11,8 +11,8 @@ import java.util.List;
  * - 根据主键查询一个用户，得到`User`
  * - 查询数量
  * - 模糊查询：根据username进行模糊查询
- * @author liuyp
- * @date 2020/02/27
+ * @author zhangyuhong
+ * @date 2018/02/27
  */
 public interface UserDao {
     List<User> queryAll();

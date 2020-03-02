@@ -15,6 +15,10 @@
         <option value="$PROJECT_DIR$/A_day25_mybatis_04_params/pom.xml" />
         <option value="$PROJECT_DIR$/A_day25_mybatis_05_dynamicSQL/pom.xml" />
         <option value="$PROJECT_DIR$/A_day25_mybatis_06_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/day26_mybatis1_duoBiao/pom.xml" />
+        <option value="$PROJECT_DIR$/day26_mybatis2_many2many/pom.xml" />
+        <option value="$PROJECT_DIR$/day26_mybatis3_lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/day26_mybatis4_annotation/pom.xml" />
       </list>
     </option>
   </component>

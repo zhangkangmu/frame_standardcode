@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <select id="queryAll" resultMap="userAccountsMap">
+        select u.*, a.id aid, a.uid, a.money from user u left join account a on u.id = a.uid
+    </select>
+    <resultMap id="userAccountsMap" type="User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="birthday" column="birthday"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+
+        <!--
+        collection：用于封装关联的一个JavaBean集合
+            property：属性名称
+            ofType：集合里的数据类型。写全限定类名，或者别名
+        -->
+        <collection property="accounts" ofType="Account">
+            <id property="id" column="aid"/>
+            <result property="uid" column="uid"/>
+            <result property="money" column="money"/>
+        </collection>
+    </resultMap>
+</mapper>

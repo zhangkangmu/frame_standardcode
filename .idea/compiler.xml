@@ -12,6 +12,10 @@
         <module name="A_day25_mybatis_04_params" />
         <module name="A_day25_mybatis_05_dynamicSQL" />
         <module name="A_day25_mybatis_06_cache" />
+        <module name="A_day26_mybatis_07_multi_table" />
+        <module name="A_day26_mybatis_08_many2many_table" />
+        <module name="A_day26_mybatis_09_lazy" />
+        <module name="A_day26_mybatis_10_annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +25,10 @@
       <module name="A_day25_mybatis_04_params" target="1.8" />
       <module name="A_day25_mybatis_05_dynamicSQL" target="1.8" />
       <module name="A_day25_mybatis_06_cache" target="1.8" />
+      <module name="A_day26_mybatis_07_multi_table" target="1.8" />
+      <module name="A_day26_mybatis_08_many2many_table" target="1.8" />
+      <module name="A_day26_mybatis_09_lazy" target="1.8" />
+      <module name="A_day26_mybatis_10_annotation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

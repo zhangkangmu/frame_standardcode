@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  * Created by zhangyuhong
- * Date:2020/2/27
+ * Date:2018/2/27
  * lombok的使用方式
  */
 //@Setter //生成set方法

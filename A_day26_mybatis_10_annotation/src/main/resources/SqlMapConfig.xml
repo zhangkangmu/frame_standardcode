@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--<settings>
+        &lt;!&ndash;开启 懒加载的全局开关&ndash;&gt;
+        <setting name="lazyLoadingEnabled" value="true"/>
+        &lt;!&ndash;关闭 积极加载&ndash;&gt;
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>-->
+
+    <typeAliases>
+        <package name="com.itheima.domain"/>
+    </typeAliases>
+
+    <environments default="heima87">
+        <environment id="heima87">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///mybatiscase"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <package name="com.itheima.dao"/>
+    </mappers>
+</configuration>
