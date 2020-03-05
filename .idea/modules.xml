@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/A_day26_mybatis_08_many2many_table.iml" filepath="$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/A_day26_mybatis_08_many2many_table.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/A_day26_mybatis_09_lazy.iml" filepath="$PROJECT_DIR$/A_day26_mybatis_09_lazy/A_day26_mybatis_09_lazy.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/A_day26_mybatis_10_annotation.iml" filepath="$PROJECT_DIR$/A_day26_mybatis_10_annotation/A_day26_mybatis_10_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day27_mymvc/day27_mymvc.iml" filepath="$PROJECT_DIR$/day27_mymvc/day27_mymvc.iml" />
     </modules>
   </component>
 </project>

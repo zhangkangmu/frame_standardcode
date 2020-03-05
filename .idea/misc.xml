@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day27_mymvc" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -19,6 +22,7 @@
         <option value="$PROJECT_DIR$/day26_mybatis2_many2many/pom.xml" />
         <option value="$PROJECT_DIR$/day26_mybatis3_lazy/pom.xml" />
         <option value="$PROJECT_DIR$/day26_mybatis4_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/day27_mymvc/pom.xml" />
       </list>
     </option>
   </component>

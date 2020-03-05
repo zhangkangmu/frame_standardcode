@@ -9,10 +9,12 @@ import java.util.List;
  * @date 2018/02/29
  */
 public interface AccountDao {
+//    对一查询
     List<Account> queryAllAccount();
 
     /**
      * findByUid：查询某一用户的帐号集合
+     * 对多查询,给userdao调用
      */
     List<Account> findByUid(Integer uid);
 }

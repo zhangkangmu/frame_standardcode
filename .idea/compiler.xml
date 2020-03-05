@@ -16,6 +16,7 @@
         <module name="A_day26_mybatis_08_many2many_table" />
         <module name="A_day26_mybatis_09_lazy" />
         <module name="A_day26_mybatis_10_annotation" />
+        <module name="day27_mymvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="A_day26_mybatis_08_many2many_table" target="1.8" />
       <module name="A_day26_mybatis_09_lazy" target="1.8" />
       <module name="A_day26_mybatis_10_annotation" target="1.8" />
+      <module name="day27_mymvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

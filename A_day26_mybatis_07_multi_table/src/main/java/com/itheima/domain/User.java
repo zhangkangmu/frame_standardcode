@@ -12,6 +12,9 @@ import java.util.List;
  * Data注解：添加了get/set，tostring，equals...
  * @author zhangyuhong
  * @date 2018/02/27
+ *
+ * 一对多,一个用户可以有多个账户
+ * 一般作为参数增加进去
  */
 @Data
 public class User implements Serializable {

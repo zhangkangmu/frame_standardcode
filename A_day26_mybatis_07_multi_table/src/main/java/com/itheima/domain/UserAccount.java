@@ -5,7 +5,8 @@ import lombok.Data;
 /**
  * 查询帐号信息 和 用户信息，封装到这个JavaBean里
  * @author zhangyuhong
- * @date 2018/02/29
+ * @date 2018/02/28
+ * 单对单结果集查询后的封装
  */
 @Data
 public class UserAccount extends Account{
