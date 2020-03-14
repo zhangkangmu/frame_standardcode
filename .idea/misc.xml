@@ -23,6 +23,10 @@
         <option value="$PROJECT_DIR$/day26_mybatis3_lazy/pom.xml" />
         <option value="$PROJECT_DIR$/day26_mybatis4_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/day27_mymvc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01_factory/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01_jdbc/pom.xml" />
       </list>
     </option>
   </component>

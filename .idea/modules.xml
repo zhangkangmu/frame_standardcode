@@ -12,6 +12,10 @@
       <module fileurl="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/A_day26_mybatis_08_many2many_table.iml" filepath="$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/A_day26_mybatis_08_many2many_table.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/A_day26_mybatis_09_lazy.iml" filepath="$PROJECT_DIR$/A_day26_mybatis_09_lazy/A_day26_mybatis_09_lazy.iml" />
       <module fileurl="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/A_day26_mybatis_10_annotation.iml" filepath="$PROJECT_DIR$/A_day26_mybatis_10_annotation/A_day26_mybatis_10_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/B_spring_day01_demo01_jdbc/B_spring_day01_demo01_jdbc.iml" filepath="$PROJECT_DIR$/B_spring_day01_demo01_jdbc/B_spring_day01_demo01_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/B_spring_day01_demo02_factory_custorm.iml" filepath="$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/B_spring_day01_demo02_factory_custorm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/B_spring_day01_demo03_ioc/B_spring_day01_demo03_ioc.iml" filepath="$PROJECT_DIR$/B_spring_day01_demo03_ioc/B_spring_day01_demo03_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/B_spring_day01_demo04_bean.iml" filepath="$PROJECT_DIR$/B_spring_day01_demo04_bean/B_spring_day01_demo04_bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/day27_mymvc/day27_mymvc.iml" filepath="$PROJECT_DIR$/day27_mymvc/day27_mymvc.iml" />
     </modules>
   </component>

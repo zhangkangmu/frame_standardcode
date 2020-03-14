@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--第一种：采用无参数的构造方法方式实例化（用的最多）-->
+    <!--<bean  id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>-->
+    <!--第二种：采用静态工厂实例化的方式-->
+    <!--<bean id="accountService" class="com.itheima.bean.StaticFactroy" factory-method="createObject"></bean>-->
+    <!--第三种：采用实例工厂（非静态的）实例化的方式-->
+    <!--<bean id="instanceFactroy" class="com.itheima.bean.InstanceFactroy"></bean>-->
+    <!--<bean id="accountService" factory-bean="instanceFactroy" factory-method="createObject"></bean>-->
+
+    <!--Bean的作用域配置：scope的配置
+        - singleton：默认值，单例的。
+        - prototype：多例的。
+        测试bean对象的生命周期（单例对象、多例对象）
+    -->
+    <bean  id="accountService" class="com.itheima.service.impl.AccountServiceImpl"
+           scope="prototype"
+           init-method="init" destroy-method="destroy"></bean>
+</beans>

@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a620a85-169d-452b-854f-7a348d09ab98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/jdbcConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_spring_day01_demo01_jdbc/B_spring_day01_demo01_jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/B_spring_day01_demo02_factory_custorm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_spring_day01_demo03_ioc/B_spring_day01_demo03_ioc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_spring_day01_demo04_bean/B_spring_day01_demo04_bean.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_spring_day01_demo04_bean/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/dao/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/com/itheima/dao/AccountDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/com/itheima/dao/AccountDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/UserDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/day24_mybatis1_quickstart/target/" />
     <ignored path="$PROJECT_DIR$/day24_mybatis2_curd_proxy/target/" />
@@ -38,6 +41,13 @@
     <ignored path="$PROJECT_DIR$/A_day26_mybatis_09_lazy/target/" />
     <ignored path="$PROJECT_DIR$/A_day26_mybatis_10_annotation/target/" />
     <ignored path="$PROJECT_DIR$/day27_mymvc/target/" />
+    <ignored path="$PROJECT_DIR$/spring_day01_bean/target/" />
+    <ignored path="$PROJECT_DIR$/spring_day01_factory/target/" />
+    <ignored path="$PROJECT_DIR$/spring_day01_ioc/target/" />
+    <ignored path="$PROJECT_DIR$/spring_day01_jdbc/target/" />
+    <ignored path="$PROJECT_DIR$/B_spring_day01_demo01_bean/target/" />
+    <ignored path="$PROJECT_DIR$/B_spring_day01_demo01_jdbc/target/" />
+    <ignored path="$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +58,28 @@
     <session id="1163981011">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dtd" value="1" />
           <entry key="html" value="2" />
-          <entry key="iml" value="5" />
-          <entry key="java" value="75" />
+          <entry key="iml" value="7" />
+          <entry key="java" value="84" />
           <entry key="jsp" value="2" />
           <entry key="pom" value="1" />
           <entry key="properties" value="3" />
-          <entry key="xml" value="46" />
+          <entry key="xml" value="58" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
@@ -75,28 +87,28 @@
         <counts>
           <entry key="DTD" value="1" />
           <entry key="HTML" value="2" />
-          <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="75" />
+          <entry key="IDEA_MODULE" value="7" />
+          <entry key="JAVA" value="84" />
           <entry key="JSP" value="2" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="48" />
+          <entry key="XML" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="172" />
+          <entry key="java" value="174" />
           <entry key="properties" value="6" />
-          <entry key="txt" value="113" />
-          <entry key="xml" value="614" />
+          <entry key="txt" value="122" />
+          <entry key="xml" value="617" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="172" />
-          <entry key="PLAIN_TEXT" value="113" />
+          <entry key="JAVA" value="174" />
+          <entry key="PLAIN_TEXT" value="122" />
           <entry key="Properties" value="6" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="613" />
+          <entry key="XML" value="616" />
         </counts>
       </usages-collector>
     </session>
@@ -104,91 +116,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml">
+        <entry file="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/B_spring_day01_demo03_ioc/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="350">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/AccountDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/src/main/java/com/itheima/dao/AccountDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="39" column="23" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="23" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/B_spring_day01_demo04_bean.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/src/main/java/com/itheima/dao/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/domain/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/com/itheima/dao/UserDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/com/itheima/dao/AccountDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="48" selection-start-line="30" selection-end-line="30" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/test/java/com/itheima/test/MybatisLazyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="42" column="45" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="175">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -218,10 +168,12 @@
       <find>resultMap</find>
       <find>queryAll</find>
       <find>queryAllUserAccount</find>
-      <find>association</find>
       <find>queryAllAccount</find>
       <find>queryAllUser</find>
       <find>findByUid</find>
+      <find>association</find>
+      <find>new</find>
+      <find>Ele</find>
     </findStrings>
     <replaceStrings>
       <replace>root</replace>
@@ -268,9 +220,14 @@
         <option value="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/Account.java" />
         <option value="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/com/itheima/dao/AccountDao.xml" />
         <option value="$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/dao/AccountDao.java" />
-        <option value="$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml" />
         <option value="$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/AccountDao.java" />
+        <option value="$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml" />
+        <option value="$PROJECT_DIR$/B_spring_day01_demo01_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/A_day24_mybatis_01_quickstart/src/test/java/com/itheima/test/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/B_spring_day01_demo01_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/pom.xml" />
+        <option value="$PROJECT_DIR$/B_spring_day01_demo04_bean/pom.xml" />
       </list>
     </option>
   </component>
@@ -316,73 +273,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itheima" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frame_standardcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A_day26_mybatis_10_annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itheima" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="B_spring_day01_demo04_bean" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="lombok&#9;ACTION&#9;LombokActionGroup" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583430448887" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day27_mymvc/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584205640171" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring_day01_jdbc/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -447,7 +359,13 @@
       <workItem from="1583251040032" duration="614000" />
       <workItem from="1583285933000" duration="1062000" />
       <workItem from="1583288091260" duration="682000" />
-      <workItem from="1583415080649" duration="9330000" />
+      <workItem from="1583415080649" duration="9624000" />
+      <workItem from="1583457063885" duration="566000" />
+      <workItem from="1583476712089" duration="1949000" />
+      <workItem from="1583639425925" duration="847000" />
+      <workItem from="1583723590933" duration="2701000" />
+      <workItem from="1583771406706" duration="24000" />
+      <workItem from="1584203722105" duration="1916000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis的第一天,入门的增删改查,还有lombox的简单使用">
       <created>1582820273782</created>
@@ -477,17 +395,24 @@
       <option name="project" value="LOCAL" />
       <updated>1583113824118</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mybatis补充">
+      <created>1583430560671</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583430560671</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54653000" />
+    <option name="totallyTimeSpent" value="62950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -495,6 +420,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
@@ -556,99 +482,10 @@
     <MESSAGE value="mybatis的第二天,参数,动态sql 以及 缓存" />
     <MESSAGE value="更新mybatis的知识点,注意点" />
     <MESSAGE value="mybatis第二天,懒加载,多表查询,以及注解开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis第二天,懒加载,多表查询,以及注解开发" />
+    <MESSAGE value="mybatis补充" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis补充" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/src/main/resources/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/src/main/java/com/itheima/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/src/main/java/com/itheima/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day25_mybatis_06_cache/src/main/resources/com/itheima/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/com/itheima/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/baseservlet/LinkManServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/baseservlet/BaseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/mymvc1/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/mymvc1/RequestMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/mymvc2/MvcMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -674,9 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/UserAccount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -769,13 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
           <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/com/itheima/dao/AccountDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -814,69 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/RoleDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/domain/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/test/java/com/itheima/test/MybatisLazyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="42" column="45" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/A_day25_mybatis_04_params/src/main/java/com/itheima/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/com/itheima/dao/AccountDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="48" selection-start-line="30" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/com/itheima/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -889,15 +650,174 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/src/main/java/com/itheima/dao/AccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="800">
           <caret line="39" column="23" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/java/com/itheima/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/A_day26_mybatis_10_annotation/src/main/java/com/itheima/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="2125">
           <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_08_many2many_table/src/main/resources/com/itheima/dao/RoleDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/com/itheima/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/java/com/itheima/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/com/itheima/dao/AccountDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_07_multi_table/src/main/resources/com/itheima/dao/AccountDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/mymvc1/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/test/java/com/itheima/test/MybatisLazyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day26_mybatis_09_lazy/src/main/resources/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day27_mymvc/src/main/java/com/itheima/mymvc1/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo03_ioc/src/main/java/com/itheima/controller/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1675">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo03_ioc/src/main/java/com/itheima/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo01_jdbc/src/main/java/com/itheima/main/TestJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A_day24_mybatis_01_quickstart/src/test/java/com/itheima/test/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo01_jdbc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/src/main/java/com/itheima/factory/BeanFactroy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo02_factory_custorm/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo03_ioc/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/B_spring_day01_demo04_bean.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B_spring_day01_demo04_bean/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -907,10 +827,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>day27_mymvc:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -918,7 +840,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -953,7 +875,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>A_day24_mybatis_03_custom_design</last-edited>
+          <last-edited>spring_day01_jdbc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

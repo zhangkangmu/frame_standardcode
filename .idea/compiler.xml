@@ -16,7 +16,16 @@
         <module name="A_day26_mybatis_08_many2many_table" />
         <module name="A_day26_mybatis_09_lazy" />
         <module name="A_day26_mybatis_10_annotation" />
+        <module name="B_spring_day01_demo01_jdbc" />
+        <module name="B_spring_day01_demo02_factory_custorm" />
+        <module name="B_spring_day01_demo04_bean" />
         <module name="day27_mymvc" />
+      </profile>
+      <profile name="Annotation profile for spring_day01_ioc" enabled="true">
+        <sourceOutputDir name="../spring_day01_ioc/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring_day01_ioc/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="B_spring_day01_demo03_ioc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +39,10 @@
       <module name="A_day26_mybatis_08_many2many_table" target="1.8" />
       <module name="A_day26_mybatis_09_lazy" target="1.8" />
       <module name="A_day26_mybatis_10_annotation" target="1.8" />
+      <module name="B_spring_day01_demo01_jdbc" target="1.8" />
+      <module name="B_spring_day01_demo02_factory_custorm" target="1.8" />
+      <module name="B_spring_day01_demo03_ioc" target="1.8" />
+      <module name="B_spring_day01_demo04_bean" target="1.8" />
       <module name="day27_mymvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
