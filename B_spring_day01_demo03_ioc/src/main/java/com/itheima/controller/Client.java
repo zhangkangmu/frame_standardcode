@@ -80,7 +80,7 @@ public class Client {
 
     /**
      * 4.2 id和name的配置（了解）
-     id中不能出现特殊字符（容器中的唯一标识），name中可以出现特殊的字符（表示引用）。\
+     id中不能出现特殊字符（容器中的唯一标识），name中可以出现特殊的字符（表示引用）。
      id="accountService,accountService1,accountService2"：accountService,accountService1,accountService2表示唯一标识
      name="accountService,accountService1,accountService2"：使用逗分隔，name是可以解析特殊字符串，有3个名称可以找到spring所创建的对象的
      */
@@ -88,7 +88,7 @@ public class Client {
         // 解耦
         // Spring的工厂（ApplicationContext接口ClassPathXmlApplicationContext实现类）加载applicationContext.xml
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-        AccountService accountService = ac.getBean("accountService1", AccountService.class); // 底层：来自Map集合
+        AccountService accountService = ac.getBean("accountService", AccountService.class); // 底层：来自Map集合
         System.out.println(accountService);
     }
 }

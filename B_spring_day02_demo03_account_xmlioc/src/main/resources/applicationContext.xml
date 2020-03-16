@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--加载属性文件jdbc.properties-->
+    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+
+    <!--执行的顺序不做要求,有就好
+    原则:如果要拆分的话,最好先写在一起,然后那个类里使用到了那个类,就只增加那个类的id就好
+    -->
+    <import resource="classpath:applicationContext-datasource.xml"></import>
+    <import resource="classpath:applicationContext-service.xml"></import>
+    <import resource="classpath:applicationContext-dao.xml"></import>
+</beans>

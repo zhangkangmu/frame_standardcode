@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--构造方法注入
+        constructor-arg
+            name="name"：表示构造方法参数的名称
+            type="java.lang.String"：构造方法参数的类型
+            index="0"：构造方法参数的位置，从0开始，0表示第1个参数
+            以上3个配置，其实使用1个就可以了
+            **********************************************************************
+            value：表示的是值的注入
+            ref：表示对象的注入（对应spring容器中声明的id的值）
+    -->
+    <bean  id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+        <!--构造方法-->
+        <!--<constructor-arg name="name" type="java.lang.String" index="0" value="冯小刚"></constructor-arg>-->
+        <!--<constructor-arg name="age" type="java.lang.Integer" index="1" value="50"></constructor-arg>-->
+        <!--<constructor-arg name="birthday" type="java.util.Date" index="2" ref="date"></constructor-arg>-->
+        <!--set方法注入-->
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+
+    <!--set方法注入（推荐）
+        property
+            name="name"：表示set方法的名称
+            **********************************************************************
+            value：表示的是值的注入
+            ref：表示对象的注入（对应spring容器中声明的id的值）
+    -->
+    <!--<bean  id="accountService2" class="com.itheima.service.impl.AccountServiceImpl2">-->
+        <!--<property name="name" value="范冰冰"></property>-->
+        <!--<property name="age" value="30"></property>-->
+        <!--<property name="birthday" ref="date"></property>-->
+    <!--</bean>-->
+    <!--p空间完成注入-->
+    <bean  id="accountService2" class="com.itheima.service.impl.AccountServiceImpl2" p:name="赵薇" p:age="20" p:birthday-ref="date">
+    </bean>
+
+    <!--集合注入
+        array和set和list标签是可以通用的
+    -->
+    <bean id="accountService3" class="com.itheima.service.impl.AccountServiceImpl3">
+        <property name="arrays">
+            <array>
+                <value>张三</value>
+                <value>李四</value>
+                <ref bean="date"></ref>
+            </array>
+        </property>
+        <property name="set">
+            <set>
+                <value>张三三</value>
+                <value>李思思</value>
+                <ref bean="date"></ref>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>王五五</value>
+                <value>赵柳柳</value>
+                <ref bean="date"></ref>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="map001" value="田七"></entry>
+                <entry key="map002">
+                    <value>胡八一</value>
+                </entry>
+                <entry key="map003">
+                    <ref bean="date"></ref>
+                </entry>
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="jdbc.driver">com.mysql.jdbc.Driver</prop>
+                <prop key="jdbc.url">jdbc:mysql///itecastspring</prop>
+                <prop key="jdbc.username">root</prop>
+                <prop key="jdbc.password">root</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--创建时间 ，相当于Date date = new Date()-->
+    <bean id="date" class="java.util.Date"></bean>
+
+    <!--5.6 在Service中，注入Dao-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+</beans>

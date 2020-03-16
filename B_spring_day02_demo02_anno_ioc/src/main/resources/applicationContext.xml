@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--使用注解的形式，开启一个组件的扫描
+        base-package="com.itheima"：包的扫描范围，在com.itheima包及其子包中的所有类，都可以使用组件@Component
+    -->
+    <context:component-scan base-package="com.itheima"></context:component-scan>
+</beans>
