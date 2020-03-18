@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/aop
+                          http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql:///itcastspring"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+
+    <!--创建AccountDaoImpl-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+        <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--创建AccountServiceImpl-->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+        <!--编程式事务控制第三步：注入TransactionTemplate-->
+        <property name="transactionTemplate" ref="transactionTemplate"></property>
+    </bean>
+
+    <!--编程式事务处理-->
+    <!--编程式事务控制第一步：配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--编程式事务控制第二步：配置事务管理模板-->
+    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="transactionManager"></property>
+        <!--针对Service层的方法，进行事务的细化（事务定义）-->
+        <!--<property name="isolationLevel" value="-1"></property>-->
+        <!--<property name="propagationBehavior" value="0"></property>-->
+        <!--<property name="timeout" value="-1"></property>-->
+    </bean>
+</beans>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/aop
+                          http://www.springframework.org/schema/aop/spring-aop.xsd
+                          http://www.springframework.org/schema/tx
+                          http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql:///itcastspring"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+
+    <!--创建AccountDaoImpl-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+        <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--创建AccountServiceImpl-->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+
+    <!--声明式事务处理-->
+    <!--声明式事务控制第一步：配置事务管理器（通知：开启事务、提交事务、回滚事务、关闭事务）-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--声明式事务控制第二步：让事务管理器具有灵魂：XML
+        tx:advice：配置切面和通知
+          id：通知方法的唯一标识
+          transaction-manager：注入事务管理器
+
+       tx:method：对切入点的方法进行细化（Service层的方法）（细化：事务定义）
+            name=""：表示方法名称
+            isolation="DEFAULT" ：事务隔离级别，DEFAULT数据库用什么隔离级别，程序就使用什么隔离级别
+            propagation="REQUIRED"：事务传播行为，REQUIRED表示没有事务开启一个事务，有事务直接使用当前事务
+            timeout="-1"：-1表示，事务提交/回滚操作后，事务不失效
+            read-only="false"：设置为可写
+            rollback-for=""：遇到什么异常回滚
+            no-rollback-for=""：遇到什么异常不回滚，例如：no-rollback-for="java.lang.ArithmeticException" ，遇到java.lang.ArithmeticException事务不回滚
+
+            注意：声明式事务处理，底层实现是AOP；只有运行时异常才能被事务所控制，不是运行时异常不能被事务控制
+    -->
+    <tx:advice id="myAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="transfer" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="save*" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="insert*" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="update*" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="delete*" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="modify*" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="edit*" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false" />
+            <tx:method name="*" read-only="true"></tx:method>
+        </tx:attributes>
+    </tx:advice>
+    <!--声明式事务控制第三步：配置AOP，让事务管理器（通知） 控制 Service层的方法（切入点）：XML-->
+    <aop:config>
+        <aop:pointcut id="myAspect" expression="execution(* com.itheima.service..*.*(..))"></aop:pointcut>
+        <aop:advisor advice-ref="myAdvice" pointcut-ref="myAspect"></aop:advisor>
+    </aop:config>
+
+</beans>

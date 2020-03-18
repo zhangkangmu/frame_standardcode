@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/aop
+                          http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--加载属性文件jdbc.properties-->
+    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+
+    <!--创建c3p0数据源-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${jdbc.driverClass}"></property>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"></property>
+        <property name="user" value="${jdbc.user}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+    <!--创建QueryRunner-->
+    <!--注意
+        多线程开发，每个线程都使用独立的QueryRunner（包含Connection），保证Connection是线程安全的
+    -->
+    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+        <!--<constructor-arg name="ds" ref="dataSource"></constructor-arg>-->
+    </bean>
+
+    <!--创建Service-->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+        <!--<property name="transactionManager" ref="transactionManager"></property>-->
+    </bean>
+
+    <!--创建Dao-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+        <property name="queryRunner" ref="queryRunner"></property>
+        <property name="connectionUtils" ref="connectionUtils"></property>
+    </bean>
+
+
+    <!--/********************************************************/-->
+    <!--创建连接对象-->
+    <bean id="connectionUtils" class="com.itheima.utils.ConnectionUtils">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--创建事务管理器-->
+    <!--切面（没有灵魂）-->
+    <bean id="transactionManager" class="com.itheima.utils.TransactionManager">
+        <property name="connectionUtils" ref="connectionUtils"></property>
+    </bean>
+
+    <!--配置AOP-->
+    <aop:config>
+        <aop:pointcut id="myPointcut" expression="execution(* com.itheima.service..*.*(..))"></aop:pointcut>
+        <aop:aspect id="myAspect" ref="transactionManager">
+            <aop:before method="beginTransaction" pointcut-ref="myPointcut"></aop:before>
+            <aop:after-returning method="commit" pointcut-ref="myPointcut"></aop:after-returning>
+            <aop:after-throwing method="rollback" pointcut-ref="myPointcut"></aop:after-throwing>
+            <aop:after method="close" pointcut-ref="myPointcut"></aop:after>
+        </aop:aspect>
+    </aop:config>
+</beans>
