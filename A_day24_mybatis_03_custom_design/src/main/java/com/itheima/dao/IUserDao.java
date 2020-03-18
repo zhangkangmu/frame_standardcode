@@ -6,7 +6,7 @@ import com.itheima.mybatis.annotations.Select;
 import java.util.List;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  *
  * 用户的持久层接口

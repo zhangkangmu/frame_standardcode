@@ -13,7 +13,7 @@ import java.beans.PropertyVetoException;
 /**
  * @ClassName DataSourceConfig
  * @Author ly
- * @Company 深圳黑马程序员
+ * @Company
  * @Date 2020/3/15 16:24
  * @Version V1.0
  */

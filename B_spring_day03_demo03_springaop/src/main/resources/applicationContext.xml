@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/aop
+                          http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--1：创建目标对象-->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+    <!--2：创建切面类对象（不具有AOP的灵魂）-->
+    <bean id="logger" class="com.itheima.util.Logger"></bean>
+    <!--3：配置AOP
+        (1)：定义切面，让切面生效（具有灵魂）
+        (2)：定义AOP中的通知类型
+            aop:before：前置通知：在访问目标对象方法之前，先执行通知
+                method="" ：通知的方法
+                pointcut=""：定义切入点（目标对象中的方法）
+    -->
+    <aop:config>
+        <aop:aspect id="myAspect" ref="logger">
+            <!--<aop:before method="printLog" pointcut="execution(public void com.itheima.service.impl.AccountServiceImpl.saveAccount())"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(public void com.itheima.service.impl.AccountServiceImpl.updateAccount(int))"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(public int com.itheima.service.impl.AccountServiceImpl.deleteAccount())"></aop:before>-->
+
+            <!--<aop:before method="printLog" pointcut="execution(void saveAccount())"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(void updateAccount(int))"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(int deleteAccount())"></aop:before>-->
+            <!--
+            execution(* com.itheima.service..*.*(..))
+                表示：返回类型任意，com.itheima.service包及其子包中的所有类，类中的所有方法，参数任意
+            -->
+            <aop:before method="printLog" pointcut="execution(* com.itheima.service..*.*(..))"></aop:before>
+            <!-- 指定参数的通知方法  -->
+            <!--<aop:before method="printLog" pointcut="execution(* com.itheima.service..*.*(int,String))"></aop:before>-->
+        </aop:aspect>
+    </aop:config>
+</beans>

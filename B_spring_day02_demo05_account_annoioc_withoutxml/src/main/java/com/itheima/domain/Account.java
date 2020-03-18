@@ -4,7 +4,7 @@ package com.itheima.domain;
  * @ClassName Account
  *
  * @Author ly
- * @Company 深圳黑马程序员
+ * @Company
  * @Date 2020/3/15 14:18
  * @Version V1.0
  */

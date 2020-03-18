@@ -7,7 +7,7 @@ import com.itheima.mybatis.utils.XMLConfigBuilder;
 import java.io.InputStream;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  *  用于创建一个SqlSessionFactory对象
  */

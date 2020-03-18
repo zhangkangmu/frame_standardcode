@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/aop
+                          http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--1：创建目标对象-->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+    <!--2：创建切面类对象（不具有AOP的灵魂）-->
+    <bean id="logger" class="com.itheima.util.Logger"></bean>
+    <!--3：配置AOP
+        (1)：定义切面，让切面生效（具有灵魂）
+        (2)：定义AOP中的通知类型
+            aop:before：前置通知：在访问目标对象方法之前，先执行通知
+                method="" ：通知的方法
+                pointcut=""：定义切入点（目标对象中的方法）
+            aop:after-returning：后置通知：在访问目标对象方法之后，没有抛出异常，执行通知
+            aop:after-throwing：异常通知，在访问目标对象方法之后，目标对象抛出异常，执行通知
+            aop:after：最终通知，在访问目标对象方法之后，无论目标对象的方法是否抛出异常，都会执行通知
+            aop:around：环绕通知，表示手动调用目标对象，并且在目标对象之前，之后，异常，最终填写我们自己的代码（类似JDK代理）
+    -->
+    <aop:config>
+        <!--定义配置切入点  这个要放在切面之前,放在后面会报错-->
+        <aop:pointcut id="myPointcut" expression="execution(* com.itheima.service..*.*(..))"></aop:pointcut>
+        <aop:aspect id="myAspect" ref="logger">
+            <!--前置通知，关联切入点-->
+            <!--<aop:before method="beforePrintLog" pointcut-ref="myPointcut"></aop:before>-->
+            <!--后置通知，关联切入点-->
+            <!--<aop:after-returning method="afterReturningPrintLog" pointcut-ref="myPointcut"></aop:after-returning>-->
+            <!--异常通知，关联切入点 ,   注意:切入点出现异常的时候才执行异常通知-->
+            <!--<aop:after-throwing method="afterThrowingPrintLog" pointcut-ref="myPointcut"></aop:after-throwing>-->
+            <!--最终通知，关联切入点-->
+            <!--<aop:after method="afterPrintLog" pointcut-ref="myPointcut"></aop:after>-->
+            <!--环绕通知，关联切入点  包含多个通知,需要在代码中设置-->
+            <aop:around method="aroundPrintLog" pointcut-ref="myPointcut"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>

@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
 import java.sql.Connection;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * SqlSession接口的实现类
  */

@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  *  用于解析配置文件
  */

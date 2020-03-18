@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * 用于创建数据源的工具类
  */

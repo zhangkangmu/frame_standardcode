@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * @ClassName AccountDaoImpl
  * @Author ly
- * @Company 深圳黑马程序员
  * @Date 2020/3/15 14:21
  * @Version V1.0
  */

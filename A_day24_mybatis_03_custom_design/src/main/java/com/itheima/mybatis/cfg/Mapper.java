@@ -1,7 +1,7 @@
 package com.itheima.mybatis.cfg;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * 用于封装执行的SQL语句和结果类型的全限定类名
  */

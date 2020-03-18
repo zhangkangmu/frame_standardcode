@@ -3,7 +3,7 @@ package com.itheima.mybatis.io;
 import java.io.InputStream;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * 使用类加载器读取配置文件的类
  */

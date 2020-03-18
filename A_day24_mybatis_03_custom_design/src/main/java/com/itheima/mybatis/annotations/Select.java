@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * 查询的注解
  */

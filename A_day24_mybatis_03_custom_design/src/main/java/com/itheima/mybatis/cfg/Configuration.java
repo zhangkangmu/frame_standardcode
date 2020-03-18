@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * 自定义mybatis的配置类
  */

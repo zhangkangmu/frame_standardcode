@@ -6,7 +6,7 @@ import com.itheima.mybatis.sqlsession.SqlSessionFactory;
 
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  * SqlSessionFactory接口的实现类
  */

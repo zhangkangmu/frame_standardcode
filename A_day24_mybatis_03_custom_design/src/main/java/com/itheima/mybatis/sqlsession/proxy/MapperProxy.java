@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.util.Map;
 
 /**
- * @author 黑马程序员
+ * @author
  * @Company http://www.ithiema.com
  */
 public class MapperProxy implements InvocationHandler {
