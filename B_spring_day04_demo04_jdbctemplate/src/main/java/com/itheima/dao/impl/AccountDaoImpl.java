@@ -15,12 +15,15 @@ import java.util.List;
  * @Date 2020/3/18 11:34
  * @Version V1.0
  */
+//JdbcDaoSupport,为了使用jdbctemplate模板
+    //JdbcDaoSupport里有一个属性:jdbcTemplate
 public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {
 
 
     // ID查询
     @Override
     public Account findById(Integer id) {
+        //因为有了JdbcDaoSupport,所以,可以直接使用getJdbcTemplate()
         Account account = super.getJdbcTemplate().queryForObject("select * from account where id = ?", new BeanPropertyRowMapper<Account>(Account.class),id);
         return account;
     }

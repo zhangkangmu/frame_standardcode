@@ -5,6 +5,8 @@ import com.itheima.domain.Account;
 import com.itheima.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -44,6 +46,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
 //    @Transactional(isolation = Isolation.DEFAULT,propagation = Propagation.REQUIRED,readOnly = true)
+//    类前面配置了
     public void transfer(String sourceName, String targetName, float money) {
 //        try {
             // 1：使用sourceName查询aaa的账号，获取Account对象

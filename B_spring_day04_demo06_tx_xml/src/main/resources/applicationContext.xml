@@ -24,6 +24,7 @@
 
     <!--创建AccountDaoImpl-->
     <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+        <!--可以这样设置jdbcTemplate属性,但是麻烦,也可以设置数据源,可以这样设置jdbcTemplate属性会自动设置好数据源-->
         <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
         <property name="dataSource" ref="dataSource"></property>
     </bean>
