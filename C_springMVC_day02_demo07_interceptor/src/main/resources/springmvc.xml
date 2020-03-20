@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--（1）：配置组件的扫描（扫描控制层的组件@Controller）-->
+    <context:component-scan base-package="com.itheima"></context:component-scan>
+
+    <!--（2）：开启springmvc的三大组件（处理器映射器，处理器适配器，视图解析器(可有可无)）
+    springmvc的注解驱动（自动开启处理器映射器，处理器适配器等配置）
+       省略了：
+          <bean id="requestMappingHandlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>
+          <bean id="requestMappingHandlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean>
+
+    -->
+    <mvc:annotation-driven></mvc:annotation-driven>
+
+    <!--（3）：创建视图解析器（定义响应视图的路径，指定前缀和后缀）-->
+    <bean id="resourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/page/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--（4）去掉静态资源的拦截（js、css、img）-->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+
+    <!--配置拦截器
+        mvc:interceptors：配置拦截器链
+            mvc:mapping path=""：表示哪些URL，执行拦截器
+                    mvc:mapping path="/user/**"：表示user路径下的所有链接都会执行拦截器
+                    mvc:mapping path="/**"：表示所有链接都会执行拦截器（包括静态资源、包括动态资源）
+           mvc:exclude-mapping path="/user/save"：表示哪些URL，不会执行拦截器
+    -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <!--<mvc:exclude-mapping path="/user/save"></mvc:exclude-mapping>-->
+            <bean class="com.itheima.interceptor.MyInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <!--<mvc:exclude-mapping path="/user/save"></mvc:exclude-mapping>-->
+            <bean class="com.itheima.interceptor.MyInterceptor2"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>
