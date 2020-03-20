@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.itheima</groupId>
-    <artifactId>a_spring_day04_annotationaop</artifactId>
+    <artifactId>B_spring_day04_demo01_annotationaop</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.itheima</groupId>
-    <artifactId>e_spring_day04_tx</artifactId>
+    <artifactId>B_spring_day04_demo05_tx</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

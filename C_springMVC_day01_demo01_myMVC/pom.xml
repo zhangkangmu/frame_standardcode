@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.itheima</groupId>
-    <artifactId>day27_mymvc</artifactId>
+    <artifactId>C_springMVC_day01_demo01_myMVC</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
