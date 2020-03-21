@@ -32,5 +32,6 @@
     <mvc:default-servlet-handler></mvc:default-servlet-handler>
 
     <!--配置异常处理器-->
+    <!--加载到里容器,spring会自动识别到,相当于一个组件-->
     <bean id="sysExceptionHandler" class="com.itheima.exception.SysExceptionHandler"></bean>
 </beans>

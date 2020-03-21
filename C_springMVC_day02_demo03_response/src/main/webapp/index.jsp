@@ -38,7 +38,7 @@
            // $.ajax-->json数据
            $.ajax({
                url:"user/testAjax", // 请求地址
-               data:'{"username":"张三","age":"22"}',// 传递的数据，json的数据格式
+               data:'{"username":"张三","age":"22"}',// 传递的数据，json的数据格式,注意大小括号
                contentType:"application/json;chartset=utf-8", // 请求的数据类型
                dataType:"json", // 服务器响应的类型
                type:"post", // 请求方式post

@@ -119,7 +119,7 @@ public class UserController {
     @RequestMapping(value = "/testForwardOrRedirect")
     public String testForwardOrRedirect() {
         System.out.println("欢迎访问UserController类中的testForwardOrRedirect的方法！");
-        // return "forward:/WEB-INF/page/success.jsp"; // forward关键字的时候，视图解析器将失效
+        // return "forward:/WEB-INF/page/success.jsp"; // forward关键字的时候，视图解析器将失效--可以成功跳转
         // return "forward:/user/userUpdate"; // 此时的路径：http://localhost:8080/springmvc_day02_response/user/testForwardOrRedirect
         // return "redirect:/WEB-INF/page/success.jsp"; //错误写法，重定向不能指定到WEB-INF/下的路径
         return "redirect:/user/userUpdate";// 此时的路径：http://localhost:8080/springmvc_day02_response/user/userUpdate

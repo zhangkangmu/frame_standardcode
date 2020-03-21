@@ -74,7 +74,7 @@ public class UserController {
 
     // SpringMVC的上传组件（底层Servlet）完成文件上传
     // 1：接收MultipartFile类型的文件
-    @RequestMapping(value = "/fileUpload2")
+    @RequestMapping(value = "/fileUpload2")   //主要MultipartFile的变量名要与前端传来的file文件类型的name名称一致
     public String fileUpload2(HttpServletRequest request, MultipartFile upload) throws Exception {
         System.out.println("欢迎访问UserController类中的fileUpload2的方法！");
         // 2：上传的位置，获取服务器地址下的项目路径，将上传文件放置到项目路径下的uploads文件夹
@@ -82,7 +82,7 @@ public class UserController {
         File file = new File(path);
         // 如果uploads文件夹不存在，需要创建文件夹
         if (!file.exists()) {
-            file.mkdirs();
+            file.mkdirs();  //mkdirs:创建由此File表示的目录，包括任何必需但不存在的父目录。  mkdir:创建由此File表示的目录。
         }
 
         // 3：上传的文件名
@@ -99,14 +99,14 @@ public class UserController {
     @RequestMapping(value = "/fileUpload3")
     public String fileUpload3(Model model, MultipartFile upload) throws Exception {
         System.out.println("欢迎访问UserController类中的fileUpload3的方法！");
-        // 2：上传的位置，指定另一台服务器部署的url
+        // 2：上传的位置，指定另一台服务器部署的url  注意:这里一定要有斜杠
         String path = "http://localhost:8082/springmvc_day02_fileuploadServer/uploads/";
 
         // 3：上传的文件名
         String fileName = upload.getOriginalFilename(); // 01.jpg
-        String uuid = UUID.randomUUID().toString().toUpperCase().replace("-", "");
+            String uuid = UUID.randomUUID().toString().toUpperCase().replace("-", "");
         fileName = uuid + "_" + fileName;
-        // 4：上传文件
+        // 4：上传文件  注意:这里是create,不是new
         Client client = Client.create();
         WebResource resource = client.resource(path + fileName);
         resource.put(upload.getBytes());

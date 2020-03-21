@@ -1,0 +1,12 @@
+springmvc里的顺序1--2--3
+【拦截器1】preHandle
+【拦截器2】preHandle
+【拦截器3】preHandle
+执行到了controller里的save的方法
+【拦截器3】的postHandle
+【拦截器2】的postHandle
+【拦截器1】的postHandle
+success.jsp显示了
+【拦截器3】afterCompletion
+【拦截器2】afterCompletion
+【拦截器1】afterCompletion
