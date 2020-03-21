@@ -39,6 +39,7 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!--这是provided,代表编译有效,运行时无效,防止和tomcat里的servlet冲突-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
