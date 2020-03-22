@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--一：组件扫描，开启spring的IOC的支持，为了在控制器中使用@Controller-->
+    <context:component-scan base-package="com.itheima.ssm"></context:component-scan>
+    <!--二：开启springMVC的注解驱动，开启处理器映射器和处理器适配器-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <!--三：视图解析器-->
+    <bean id="resourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/page/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    <!--四：静态资源（css、js、img）不过滤，因为在web.xml配置/-->
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--mvc:mapping：表示需要被拦截的url;/**表示拦截所有的url请求（包括静态和动态）-->
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/**/*.js"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/user/save"></mvc:exclude-mapping>  <!--注册没有session-->
+            <mvc:exclude-mapping path="/user/login"></mvc:exclude-mapping> <!--登录没有session，登录之后采用的session-->
+            <bean class="com.itheima.ssm.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    <!--spring加载多个配置文件-->
+    <import resource="classpath:applicationContext.xml"></import>
+</beans>

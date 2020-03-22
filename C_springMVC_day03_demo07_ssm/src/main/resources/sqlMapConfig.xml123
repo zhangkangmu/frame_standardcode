@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--一：别名，在映射文件中使用account，表示com.itheima.ssm.domain.Account-->
+    <typeAliases>
+        <package name="com.itheima.ssm.domain"></package>
+    </typeAliases>
+    <!--二：数据源-->
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"></property>
+                <property name="url" value="jdbc:mysql:///itcastspringmvc"></property>
+                <property name="username" value="root"></property>
+                <property name="password" value="root"></property>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--三：加载映射文件
+        package name="com.itheima.ssm.dao"：表示com.itheima.ssm.dao下的所有接口都可以加载对应的映射文件（接口的类名和映射文件的名称要一致）
+    -->
+    <mappers>
+        <package name="com.itheima.ssm.dao"></package>
+    </mappers>
+</configuration>
