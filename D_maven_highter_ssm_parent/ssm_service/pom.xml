@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>ssm_parent</artifactId>
+        <artifactId>D_maven_highter_ssm_parent</artifactId>
         <groupId>com.itheima</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -22,7 +22,6 @@
             <artifactId>ssm_dao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <!-- spring -->
         <dependency>
             <groupId>org.aspectj</groupId>
