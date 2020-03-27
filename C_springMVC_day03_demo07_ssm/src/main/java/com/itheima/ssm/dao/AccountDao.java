@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-//@Repository // 加不加都行
+//@Repository // 加不加都行,可以去掉
 public interface AccountDao {
 
     // 方法
