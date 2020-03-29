@@ -23,6 +23,7 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
 
     <!--dubbo使用什么协议和端口对外发布服务，该配置不写，默认是dubbo协议，端口是20880（注意：该配置需要在服务提供者完成）-->
+    <!--这里的端口号不一定要跟前面的2181一样-->
     <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
     <dubbo:protocol name="rmi" port="1099"></dubbo:protocol>
     <!--3：配置需要暴露的业务接口及实现类（配置文件XML）-->
@@ -31,7 +32,7 @@
     <!--实现类-->
     <!--<bean id="userService" class="com.itheima.service.impl.UserServiceImpl"></bean>-->
 
-    <!--3：配置需要暴露的业务接口及实现类（注解）-->
+    <!--3：配置需要暴露的业务接口及实现类（注解）,使用了这个要在Service里加上阿里云的@Service-->
     <dubbo:annotation package="com.itheima.service"></dubbo:annotation>
     <!--加载spring-dubbo.xml的同时，加载spring-service.xml-->
     <!--<import resource="classpath:spring-service.xml"></import>-->
