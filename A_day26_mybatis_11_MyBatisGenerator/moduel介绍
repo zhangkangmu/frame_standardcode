@@ -1,0 +1,14 @@
+dao层的逆向工程
+也就是每次dao层都要配置xml和sql语句,比较麻烦,这个工程可以直接帮助生成
+生成后要自己看下修改
+①使用方式:
+1.导包
+2.直接搜"修改的地方,对一些配置进行修改就可以了"
+3.在test下运行GeneratorSqlmap.java
+
+②使用方式:
+1.导包,增加逆行工程插件mybatis-generator-maven-plugin,并配置信息
+2.生成generatorConfig.xml文件
+3.复制的话,那搜要修改的地方修改就好--仅仅修改xml里的
+
+

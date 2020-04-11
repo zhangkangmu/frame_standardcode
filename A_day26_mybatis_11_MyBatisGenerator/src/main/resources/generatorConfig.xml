@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--使用的时候直接搜"要改的地方,直接改就可以用了"-->
+    <!--搜试试做下-->
+
+    <!--官网是这样写的
+    targetRuntime:代表使用的是MyBatis3版本
+    -->
+    <context id="testTables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库连接的信息：驱动类、连接地址、用户名、密码 ~~~使用的时候要改的地方-->
+        <!--serverTimezone:设置时区,
+        UTC:代表不会报错
+        北京时间东八区:serverTimezone=GMT%2B8 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/school?serverTimezone=GMT%2B8" userId="root"
+                        password="root">
+        </jdbcConnection>
+
+        <!--
+        javaTypeResolver:类型转换器,也就是其他的数值类型会转Integer还是BigDecimal
+		BigDecimal：精确比较高 一般价格用BigDecimal
+		默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
+			NUMERIC 类型解析为java.math.BigDecimal
+			如果是涉及精度要求高,如价格等就要改的地方,否则次数不需要改
+			-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!--会自动生成数数据库表的javabean-->
+        <!-- targetProject:生成PO类(pojo类,就是javabean)的位置 -->
+        <javaModelGenerator targetPackage="com.zhang.pojo"
+                            targetProject="src/main/java/">
+            <!-- enableSubPackages:是否让schema作为包的后缀 等下试试改成true现象-->
+            <property name="enableSubPackages" value="false" />
+            <!-- 从数据库返回的值被清理前后的空格 -->
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- targetProject:mapper/dao映射文件生成的位置  要改的地方-->
+        <sqlMapGenerator targetPackage="com.zhang.dao"
+                         targetProject="src/main/resources/">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+
+        <!-- targetPackage：mapper/dao接口生成的位置 要改的地方-->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.zhang.dao"
+                             targetProject="src/main/java/">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false" />
+        </javaClientGenerator>
+
+        <!-- 指定数据库表
+        schema:指定当前表所在的数据库
+        tableName:就是对应的数据表了
+        要改的地方-->
+
+        <table schema="school" tableName="loginmessage" />
+
+      <!--
+      domainObjectName:生成后的实例名
+      enableCountByExample:Count语句中加入where条件查询，默认为true开启
+      enableUpdateByExample:Update语句中加入where条件查询，默认为true开启
+      enableDeleteByExample:Delete语句中加入where条件查询，默认为true开启
+      enableSelectByExample:Select多条语句中加入where条件查询，默认为true开启
+      selectByExampleQueryId:Select单个对象语句中加入where条件查询，默认为true开启-->
+
+        <!-- <table schema="" tableName="customer" />
+        <table schema="" tableName="sys_user" /> -->
+        <!-- 有些表的字段需要指定java类型
+         <table schema="" tableName="">
+            <columnOverride column="" javaType="" />
+        </table> -->
+    </context>
+</generatorConfiguration>
