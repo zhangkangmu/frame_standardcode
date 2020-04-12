@@ -38,7 +38,9 @@
         <!--一般只需要配置一个地方即可 -->
         <!--<security:intercept-url pattern="/hello/delete.do"  access="isAuthenticated()" />-->
 
-        <!--只要认证通过就可以访问  access的值是security提供的-->
+        <!--只要认证通过就可以访问  access的值是security提供的
+        html、findAll.do、delete.do路径都可以匹配
+        -->
         <security:intercept-url pattern="/index.html" access="isAuthenticated()"/>
         <security:intercept-url pattern="/a.html" access="isAuthenticated()"/>
         <!--拥有add权限就可以访问b.html页面-->
@@ -78,6 +80,14 @@
         -->
         <!--禁用csrf（了解） disabled="true"禁用-->
         <security:csrf disabled="true"/>
+
+        <!--退出登录
+      logout-url:登出请求地址
+      logout-success-url：登出后成功页面
+      invalidate-session:session失效
+      -->
+        <security:logout logout-url="/logout.do" logout-success-url="/login.html" invalidate-session="true"/>
+
     </security:http>
 
 
