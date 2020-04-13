@@ -61,8 +61,8 @@
         <security:intercept-url pattern="/**" access="hasRole('ROLE_ADMIN')"/>
         <!--登录配置
        login-page="/login.html"：用户没有登录，跳转到登录页面
-       username-parameter：用户名 跟页面表单中name一致
-       password-parameter：密码 跟页面表单中name一致
+       username-parameter：用户名 跟页面表单中name一致  如果跟security一样可以默认
+       password-parameter：密码 跟页面表单中name一致    如果跟security一样可以默认
        login-processing-url：登录请求 跟页面表单中一致  controller不需要在弄一个/login.do了
        authentication-failure-url：登录失败 往哪个页面跳转
        default-target-url：登录成功  总是往这个页面跳转
@@ -70,6 +70,7 @@
        -->
         <security:form-login login-page="/login.html" login-processing-url="/login.do"
                              authentication-failure-url="/login.html" default-target-url="/index.html"
+                             password-parameter="username" username-parameter="password"
                              always-use-default-target="true"/>
 
         <!--CSRF:跨站点请求伪造(Cross—Site Request Forgery)
@@ -88,6 +89,11 @@
       -->
         <security:logout logout-url="/logout.do" logout-success-url="/login.html" invalidate-session="true"/>
 
+        <!--配置SpringSecurity信任iframe标签  iframe:elementUI里的容器-->
+        <security:headers>
+            <!--设置在页面可以通过iframe访问受保护的页面，默认为不允许访问-->
+            <security:frame-options policy="SAMEORIGIN"></security:frame-options>
+        </security:headers>
     </security:http>
 
 

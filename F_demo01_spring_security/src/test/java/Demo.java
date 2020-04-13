@@ -8,9 +8,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class Demo {
     public static void main(String[] args) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        String zhangyuhong = encoder.encode("张宇洪");
+        String zhangyuhong = encoder.encode("123");
         System.out.println(zhangyuhong);
-        boolean matches = encoder.matches("张宇洪", zhangyuhong);
+        boolean matches = encoder.matches("123", zhangyuhong);
         System.out.println(matches);
         System.out.println("===========MD5==================");
         String md5 = MD5Util.md5("张宇洪");
