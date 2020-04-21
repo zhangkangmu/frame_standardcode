@@ -1,0 +1,42 @@
+#配置tomcat端口
+server:
+  port: 18080
+  servlet:
+    #配置项目根目录
+    context-path: /demo
+#声明普通key-value
+#强调在yml语法中空格非常非常敏感
+name: Steven
+sex: 1
+
+# 配置对象信息user.name=steven
+user1:
+  name: Steven1
+  age: 18
+  addr: szitheima
+  #对象中的集合
+  userListObj:
+    - name: Steven-list
+      age: 18
+      addr: sz
+    - name: Lucy
+      age: 18
+      addr: bj
+# 对象配置方式二(了解)：
+user2: {name: Steven,age: 18,addr: szitheima}
+
+#配置集合
+userList:
+  - Steven
+  - Lucy
+#集合方式二(了解)
+userList2: [Steven,Lucy]
+
+# 配置集合中的对象
+userListObj:
+  - name: Steven
+    age: 18
+    addr: sz
+  - name: Lucy
+    age: 18
+    addr: bj

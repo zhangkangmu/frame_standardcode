@@ -1,0 +1,4 @@
+#修改内置tomcat启动端口号，默认8080
+server.port=18080
+#设置项目访问根目录，默认值/
+server.servlet.context-path=/demo
