@@ -6,15 +6,17 @@ server:
     context-path: /demo
 #声明普通key-value
 #强调在yml语法中空格非常非常敏感
+#这种简单的一般用@Value获取
 name: Steven
 sex: 1
 
 # 配置对象信息user.name=steven
+# 这种复杂的一般用实体对象进行获取 @ConfigurationProperties
 user1:
   name: Steven1
   age: 18
   addr: szitheima
-  #对象中的集合
+  #对象中的集合  -后面要有空格
   userListObj:
     - name: Steven-list
       age: 18
@@ -25,7 +27,8 @@ user1:
 # 对象配置方式二(了解)：
 user2: {name: Steven,age: 18,addr: szitheima}
 
-#配置集合
+#配置集合 -:代表对象的开始
+#可以通过  @Value("${userList2[0]}") 获取
 userList:
   - Steven
   - Lucy

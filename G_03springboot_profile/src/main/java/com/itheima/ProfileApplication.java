@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ProfileApplication {
     public static void main(String[] args) {
+       //如果不想配置这么多的环境yml,可以在jvm虚拟机参数配置 -Dspring.profiles.active=dev
         SpringApplication.run(ProfileApplication.class, args);
     }
 }

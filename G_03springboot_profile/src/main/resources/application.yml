@@ -1,4 +1,4 @@
-#选择环境
+#选择环境 激活那个环境
 spring:
   profiles:
     active: pro

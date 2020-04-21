@@ -35,7 +35,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+<!--@ConfigurationProperties中使用的时候需要的依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>

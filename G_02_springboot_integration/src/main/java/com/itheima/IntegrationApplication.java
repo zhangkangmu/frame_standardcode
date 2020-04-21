@@ -22,6 +22,12 @@ public class IntegrationApplication {
         SpringApplication.run(IntegrationApplication.class,args);
     }
 
+    /**
+     * @param redisConnectionFactory
+     * @return
+     *
+     * 为了redis在客户端不显示中文的hash码 而是对于的中文增加的类
+     */
     @Bean
     public RedisTemplate<Object, Object> redisTemplate(
             RedisConnectionFactory redisConnectionFactory) throws UnknownHostException {

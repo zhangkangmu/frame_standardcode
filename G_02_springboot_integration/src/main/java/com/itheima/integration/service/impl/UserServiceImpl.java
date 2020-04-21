@@ -17,6 +17,7 @@ import java.util.List;
  */
 @Service
 public class UserServiceImpl implements UserService {
+    //为了编译的时候去掉警告的提示的注解,仅仅为了不爆红
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private UserMapper userMapper;
