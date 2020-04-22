@@ -1,0 +1,15 @@
+自定义注解和Condition的判断方法
+
+常用的注解如下：
+
+ConditionalOnBean   当spring容器中有某一个bean时使用
+
+ConditionalOnClass  当判断当前类路径下有某一个类时使用
+
+ConditionalOnMissingBean 当spring容器中没有某一个bean时才使用
+
+ConditionalOnMissingClass 当当前类路径下没有某一个类的时候才使用
+
+ConditionalOnProperty 当配置文件中有某一个key value的时候才使用
+
+…..

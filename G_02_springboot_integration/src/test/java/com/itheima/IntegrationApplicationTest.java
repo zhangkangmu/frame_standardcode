@@ -16,6 +16,7 @@ import java.util.List;
  * @description com.itheima  一定要跟启动引导类在同一目录或者子目录下
  * @date 2020-4-21
  */
+//测试的demo要放在跟application的同级目录,也就是启动类同级目录
 @RunWith(SpringRunner.class)
 //启动SpringBoot项目
 @SpringBootTest

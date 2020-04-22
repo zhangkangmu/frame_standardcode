@@ -1,0 +1,4 @@
+#配置自定义启动器的Redis连接信息
+#redis:
+#  host: localhost
+#  port: 6666
