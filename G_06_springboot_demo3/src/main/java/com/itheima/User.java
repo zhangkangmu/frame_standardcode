@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
  * @description com.itheima
  * @date 2020-4-22
  */
- //@Component  ÊÇÎªÁË¸øÆô¶¯ÀàÍ¨¹ı@Import(User.class) µ¼Èë 
- //×¢Òâ£¬´ËÊ±µÄUser¶ÔÏó±ØĞëÊ¹ÓÃ@Component×¢²áBean, Õâ¸öÊÇÖ±½Óµ¼Èë,²»ĞèÒªÍ¨¹ıUserConfig
+ //@Component  æ˜¯ä¸ºäº†ç»™å¯åŠ¨ç±»é€šè¿‡@Import(User.class) å¯¼å…¥ 
+ //æ³¨æ„ï¼Œæ­¤æ—¶çš„Userå¯¹è±¡å¿…é¡»ä½¿ç”¨@Componentæ³¨å†ŒBean, è¿™ä¸ªæ˜¯ç›´æ¥å¯¼å…¥,ä¸éœ€è¦é€šè¿‡UserConfig
 //@Component
 public class User {
 }
