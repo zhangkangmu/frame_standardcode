@@ -1,15 +1,15 @@
-×Ô¶¨Òå×¢½âºÍConditionµÄÅĞ¶Ï·½·¨
+è‡ªå®šä¹‰æ³¨è§£å’ŒConditionçš„åˆ¤æ–­æ–¹æ³•
 
-³£ÓÃµÄ×¢½âÈçÏÂ£º
+å¸¸ç”¨çš„æ³¨è§£å¦‚ä¸‹ï¼š
 
-ConditionalOnBean   µ±springÈİÆ÷ÖĞÓĞÄ³Ò»¸öbeanÊ±Ê¹ÓÃ
+ConditionalOnBean   å½“springå®¹å™¨ä¸­æœ‰æŸä¸€ä¸ªbeanæ—¶ä½¿ç”¨
 
-ConditionalOnClass  µ±ÅĞ¶Ïµ±Ç°ÀàÂ·¾¶ÏÂÓĞÄ³Ò»¸öÀàÊ±Ê¹ÓÃ
+ConditionalOnClass  å½“åˆ¤æ–­å½“å‰ç±»è·¯å¾„ä¸‹æœ‰æŸä¸€ä¸ªç±»æ—¶ä½¿ç”¨
 
-ConditionalOnMissingBean µ±springÈİÆ÷ÖĞÃ»ÓĞÄ³Ò»¸öbeanÊ±²ÅÊ¹ÓÃ
+ConditionalOnMissingBean å½“springå®¹å™¨ä¸­æ²¡æœ‰æŸä¸€ä¸ªbeanæ—¶æ‰ä½¿ç”¨
 
-ConditionalOnMissingClass µ±µ±Ç°ÀàÂ·¾¶ÏÂÃ»ÓĞÄ³Ò»¸öÀàµÄÊ±ºò²ÅÊ¹ÓÃ
+ConditionalOnMissingClass å½“å½“å‰ç±»è·¯å¾„ä¸‹æ²¡æœ‰æŸä¸€ä¸ªç±»çš„æ—¶å€™æ‰ä½¿ç”¨
 
-ConditionalOnProperty µ±ÅäÖÃÎÄ¼şÖĞÓĞÄ³Ò»¸ökey valueµÄÊ±ºò²ÅÊ¹ÓÃ
+ConditionalOnProperty å½“é…ç½®æ–‡ä»¶ä¸­æœ‰æŸä¸€ä¸ªkey valueçš„æ—¶å€™æ‰ä½¿ç”¨
 
-¡­..
+â€¦..

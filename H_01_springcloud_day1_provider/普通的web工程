@@ -1,0 +1,3 @@
+为的就是暴露一个接口出去,别的工程可以通过这个localhost://18081/user/list可以访问到数据
+给H_02_springcloud_day1_resttemplate工程用  (test测试里有一个直接访问的地址)
+这个工程就是为了检验springboot内置的resttemplate可以自动封装请求的json数据为bean对象，相当于okhttp之类的

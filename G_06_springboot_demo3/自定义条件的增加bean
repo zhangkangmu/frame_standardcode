@@ -1,0 +1,2 @@
+ImportBeanDefinitionRegistrar的使用
+满足一定条件才将bean注入到spirng容器中

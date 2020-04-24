@@ -1,0 +1,2 @@
+@Import和@ComponentScan的方式增加bean
+以及不在@SpringBootApplication同包目录下的bean怎么增加
