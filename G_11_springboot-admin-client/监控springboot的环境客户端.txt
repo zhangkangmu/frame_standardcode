@@ -1,0 +1,2 @@
+开源社区提供的图形化界面监控---客户端
+增加了application.properties配置后可以通过这个地址访问 http://localhost:9000

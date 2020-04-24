@@ -1,0 +1,2 @@
+开源社区提供的图形化界面监控--服务端
+这是一个服务,要有一个client进行绑定端口才能通过 http://localhost:9000  访问(G_11_springboot-admin-client)
