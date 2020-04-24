@@ -22,33 +22,36 @@ public class MySpringApplicationRunListener implements SpringApplicationRunListe
     public MySpringApplicationRunListener(SpringApplication application, String[] args) {
     }
 
-
-
+    //1.
     @Override
     public void starting() {
         System.out.println("starting...项目启动中");
     }
 
+    //2.
     @Override
     public void environmentPrepared(ConfigurableEnvironment environment) {
         System.out.println("environmentPrepared...环境对象准备");
     }
-
+    //3.MyApplicationContextInitializer.initialize  初始化配置属性
+    //4.
     @Override
     public void contextPrepared(ConfigurableApplicationContext context) {
         System.out.println("contextPrepared...上下文对象准备");
     }
-
+    //5.
     @Override
     public void contextLoaded(ConfigurableApplicationContext context) {
         System.out.println("contextLoaded...上下文对象开始加载");
     }
-
+    //6.
     @Override
     public void started(ConfigurableApplicationContext context) {
         System.out.println("started...上下文对象加载完成");
     }
-
+    //7.MyApplicationRunner.run
+    //8.MyCommandLineRunner.run
+    //9.
     @Override
     public void running(ConfigurableApplicationContext context) {
         System.out.println("running...项目启动完成，开始运行");

@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class MyCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
-        //可以通过idea的springboot启动配置传入:Environment -> Program arguments
+        //可以通过idea的springboot启动配置传入:Environment -> Program arguments-->name=zhang;password=132456
         System.out.println("main函数的入参:" + Arrays.asList(args));
         System.out.println("CommandLineRunner.run...");
     }
