@@ -1,0 +1,6 @@
+1.(erueka)erueka_server 做配置中心
+2.(负载均衡Ribbon)user_provider_demo1增加多一个跟user_provider基本一样的工程(只是改了端口号)为的是测试Ribbon的负载均衡
+3.(熔断器Hystrix)主要在user_consumer中配置,但是基本上user_consumer是消费者,只是为了访问provider的连接
+    @EnableCircuitBreaker  //在启动器中配置
+    @DefaultProperties(defaultFallback = "defaultFailBack")  //userController中配置
+    application.yml中配置信息

@@ -21,6 +21,7 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "find/{id}")
+    //同名的话(value = "id")就可以不用写了
     public User findById(@PathVariable(value = "id") Integer id){
         User user = userService.findByUserId(id);
         user.setUsername(user.getUsername() + " user-provider");

@@ -22,7 +22,7 @@ eureka:
     ip-address: 127.0.0.1
     #访问服务的时候，推荐使用IP
     prefer-ip-address: true
-    #租约到期，服务时效时间，默认值90秒
+    #租约到期，服务时效时间，默认值90秒,就是等待90秒看是否有有响应
     lease-expiration-duration-in-seconds: 150
     #租约续约间隔时间，默认30秒
     lease-renewal-interval-in-seconds: 30

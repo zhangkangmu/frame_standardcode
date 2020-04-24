@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableDiscoveryClient  //开启EurekaClient
 @EnableCircuitBreaker  //开启熔断器
+//注意：这里也可以使用@SpringCloudApplication,写了@SpringCloudApplication后，其他注解需要全部去掉。
 public class UserConsumerApplication {
 
     public static void main(String[] args) {

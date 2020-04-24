@@ -65,12 +65,15 @@ public class UserController {
        /* List<ServiceInstance> instances = discoveryClient.getInstances("user-provider");
         //获取第一个实例
         ServiceInstance instance = instances.get(0);
+
+        //第一种方式拼接uri
         //localhost18081
         System.out.println(instance.getUri());
         //拼接url
         //String url = "http://" + instance.getHost() + ":" + instance.getPort() + "/user/find/" + id;
         String url = instance.getUri() + "/user/find/" + id;*/
 
+        //第二种方式拼接uri
        //负载均衡的url--使用应用程序名称定位
         String url = "http://user-provider/user/find/" + id;
 

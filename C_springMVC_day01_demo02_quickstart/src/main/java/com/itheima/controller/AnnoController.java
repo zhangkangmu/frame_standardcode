@@ -61,7 +61,11 @@ public class AnnoController {
      * url支持占位符是spring3.0之后加入的。是springmvc支持restful风格URL的一个重要标志。
      * * Rest请求的传递参数的格式：anno/testPathVariable/3/zhangsan
      */
-    @RequestMapping(value = "/testPathVariable/{id}/{username}")
+    //有?的也可以直接获取
+   // @RequestMapping(value = "/testPathVariable/{id}/{username}?pasword=allen")
+   // public String testPathVariable(@PathVariable(value = "id") Integer id, @PathVariable(value = "username") String name,String pasword) {
+
+        @RequestMapping(value = "/testPathVariable/{id}/{username}")
     public String testPathVariable(@PathVariable(value = "id") Integer id, @PathVariable(value = "username") String name) {
         System.out.println("欢迎执行AnnoController类中的testPathVariable方法！id:" + id + "    name:" + name);
         return "success";
