@@ -1,0 +1,50 @@
+# 注释版本
+server:
+  port: 18084
+spring:
+  application:
+    name: api-gateway # 应用名
+  cloud:
+    gateway:
+      routes:
+        #id唯一标识，可自定义
+        - id: user-service-route
+          #路由的服务地址
+          #uri: http://localhost:18081
+          # 动态路径路由
+          # lb(LoadBalanced),协议(负载均衡)
+          # lb://微服务应用名名字（spring.application.name）
+          uri: lb://user-provider
+          # 路由断言：路由拦截规则
+          predicates:
+            #- Path=/user/**
+            - Path=/**
+          filters:
+            # 注意：添加前缀与去掉前缀这两个过滤器，只能用其中一个
+            #- PrefixPath=/user  # 给当前路由所有请求，添加"/user"前缀
+            - StripPrefix=1  # 去除路径前缀过滤器，一个"/"识别为一个路径
+            #配置自定义局部过滤器，此处的名字与过滤器声明时的前缀一致
+            - MyParam=name
+
+      #默认过滤器-全局配置
+      default-filters:
+        # 往响应过滤器中加入响应头信息
+        - AddResponseHeader=X-Response-Default-MyName,Steven
+        - AddResponseHeader=small-gril,Lucy
+        #- StripPrefix=1  # 去除路径前缀过滤器，一个"/"识别为一个路径
+
+
+# Eureka服务中心配置
+eureka:
+  client:
+    service-url:
+      # 注册Eureka Server集群
+      defaultZone: http://127.0.0.1:7001/eureka
+
+# 修改服务地址轮询策略，默认是轮询，配置之后变随机
+#user-provider:
+#  ribbon:
+    #轮询
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    #随机算法
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
