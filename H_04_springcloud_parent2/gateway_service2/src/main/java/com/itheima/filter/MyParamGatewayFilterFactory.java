@@ -21,6 +21,8 @@ import java.util.List;
  *     处理过滤器逻辑：apply
  * }
  */
+//后缀名一定是GatewayFilterFactory
+//前缀:可以是任意,但是要在yml中配置,也就是MyParamGatewayFilterFactory分为MyParam(在yml中配置)+GatewayFilterFactory(固定)
 @Component
 public class MyParamGatewayFilterFactory extends AbstractGatewayFilterFactory<MyParamGatewayFilterFactory.Config> {
     /**
@@ -47,7 +49,7 @@ public class MyParamGatewayFilterFactory extends AbstractGatewayFilterFactory<My
     }
 
     /***
-     * 构造函数
+     * 构造函数,一定要有这个
      */
     public MyParamGatewayFilterFactory() {
         super(MyParamGatewayFilterFactory.Config.class);

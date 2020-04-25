@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 )
 //2、把生产者的请求url与方法原样配置过来
 //@RequestMapping(value = "user")
-public interface UserClient {
+public interface UserClient {  //这个类可以不注入就可以访问,是因为@FeignClient会注入到spring中
     /***
      * 根据ID查询用户信息
      * @param id

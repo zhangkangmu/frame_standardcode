@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
  * @description com.itheima.filter
  * @date 2020-4-25
  */
-@Component
+@Component   //访问如果不行的话要看yml里是否配置了多一个前缀
 public class LoginGlobalFilter implements GlobalFilter, Ordered {
 
     /**

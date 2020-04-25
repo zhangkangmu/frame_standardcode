@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @description com.itheima.feign.fallback
  * @date 2020-4-25
  */
-@Component
+@Component  //因为失败的话会跳转到这个页面转发,所以要加入容器中
 public class UserClientFallback implements UserClient {
 
     /****
@@ -31,7 +31,7 @@ public class UserClientFallback implements UserClient {
     @Override
     public User findById(Integer id) {
         User user = new User();
-        user.setUsername("Default-服务降级,Feign默认处理！");
+        user.setUsername("UserClientFallback--Default-服务降级,Feign默认处理！");
         return  user;
     }
 }
