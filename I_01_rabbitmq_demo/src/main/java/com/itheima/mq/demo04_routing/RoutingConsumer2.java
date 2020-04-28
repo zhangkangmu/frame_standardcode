@@ -1,4 +1,4 @@
-package com.itheima.mq.fanout;
+package com.itheima.mq.demo04_routing;
 
 import com.itheima.mq.utils.ConnectionUtils;
 import com.rabbitmq.client.*;
@@ -7,22 +7,24 @@ import java.io.IOException;
 
 /**
  * RabbitMQ入门
- * 完成消费者-简单模式
+ * 完成消费者-路由模式
  * @author Steven
  * @version 1.0
  * @description com.itheima.mq.simple
  * @date 2020-4-26
  */
-public class FanoutConsumer2 {
+public class RoutingConsumer2 {
     public static void main(String[] args) {
         try {
             Connection connection = ConnectionUtils.getConnection();
             //8、创建频道-channel=connection.createChannel()
             Channel channel = connection.createChannel();
             //9、声明队列-channel.queueDeclare(名称，是否持久化，是否独占本连接,是否自动删除,附加参数)
-            channel.queueDeclare("fanout_queue2", true, false, false, null);
-            //队列绑定交换机-queueBind(队列名，交换机名，路由key[广播消息的路由为空])
-            channel.queueBind("fanout_queue2", "fanout_exchange", "");
+            channel.queueDeclare("routing_queue2", true, false, false, null);
+            //队列绑定交换机-queueBind(队列名，交换机名，路由key)
+            channel.queueBind("routing_queue2", "routing_exchange", "log.error");
+            channel.queueBind("routing_queue2", "routing_exchange", "log.info");
+            channel.queueBind("routing_queue2", "routing_exchange", "log.warning");
             //创建消费者
             Consumer callback = new DefaultConsumer(channel){
                 /**
@@ -53,7 +55,7 @@ public class FanoutConsumer2 {
             //接收消息
             //channel.basicConsume("simple_queue", callback);
             //basicConsume(队列名，是否自动确认,处理消息的消费者)
-            channel.basicConsume("fanout_queue2", true, callback);
+            channel.basicConsume("routing_queue2", true, callback);
             //12、关闭资源-channel.close();connection.close()
 
             //建议消费消息时，不要关闭连接，我们可一直处于监听消息的状态

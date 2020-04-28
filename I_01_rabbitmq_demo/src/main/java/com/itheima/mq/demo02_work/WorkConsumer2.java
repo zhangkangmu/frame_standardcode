@@ -1,4 +1,4 @@
-package com.itheima.mq.topics;
+package com.itheima.mq.demo02_work;
 
 import com.itheima.mq.utils.ConnectionUtils;
 import com.rabbitmq.client.*;
@@ -7,23 +7,21 @@ import java.io.IOException;
 
 /**
  * RabbitMQ入门
- * 完成消费者-通配符模式
+ * 完成消费者-简单模式
  * @author Steven
  * @version 1.0
  * @description com.itheima.mq.simple
  * @date 2020-4-26
  */
-public class TopicConsumer1 {
+public class WorkConsumer2 {
     public static void main(String[] args) {
         try {
             Connection connection = ConnectionUtils.getConnection();
             //8、创建频道-channel=connection.createChannel()
             Channel channel = connection.createChannel();
             //9、声明队列-channel.queueDeclare(名称，是否持久化，是否独占本连接,是否自动删除,附加参数)
-            channel.queueDeclare("topic_queue1", true, false, false, null);
-            //队列绑定交换机-queueBind(队列名，交换机名，路由key)
-            //使用通配符，匹配多个路由key: * 匹配不多不小刚好一个单词   #匹配一个或者多个单词
-            channel.queueBind("topic_queue1", "topic_exchange", "log.*");
+            //channel.queueDeclare("simple_queue", true, false, false, null);
+
             //创建消费者
             Consumer callback = new DefaultConsumer(channel){
                 /**
@@ -54,7 +52,7 @@ public class TopicConsumer1 {
             //接收消息
             //channel.basicConsume("simple_queue", callback);
             //basicConsume(队列名，是否自动确认,处理消息的消费者)
-            channel.basicConsume("topic_queue1", true, callback);
+            channel.basicConsume("work_queue", true, callback);
             //12、关闭资源-channel.close();connection.close()
 
             //建议消费消息时，不要关闭连接，我们可一直处于监听消息的状态

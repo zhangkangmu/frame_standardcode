@@ -30,7 +30,7 @@ public class SendConfig {
         return new TopicExchange("topic_exchange_springboot");
     }
 
-    //队列绑定交换机
+    //队列绑定交换机,  这个代码只是让两者绑定在一起,也就是为了执行后面的代码,其他的地方不会用到这个bean了
     @Bean
     public Binding queueBindExchange(@Qualifier("topicQueueSpringBoot")Queue queue,
                                      @Qualifier("topicExchangeSpringBoot")TopicExchange exchange) {

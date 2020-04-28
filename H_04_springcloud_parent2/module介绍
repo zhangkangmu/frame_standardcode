@@ -1,0 +1,10 @@
+1.conf_server:从gitee里获取配置信息,然后其他的module通过这个中转站进行获取配置
+2.eureka_service:eureka就是配置中心,消费者和提供者都是通过这个进行消息交换的,相当于zookeeper
+3.gatewayservice:网关,门户网站通过这个网关,然后通过lb协议 查找服务名称(provider)进行过滤,路由和限流
+4.user_consumer:消费者,里面主要配置web访问,然后传给provider获取内容,里面配置了--> 负载均衡,熔断器,feign(服务之间传递消息,之前用restTemplate麻烦)
+5.user_provider,内容提供者,连接数据库进行获取信息(配置名称必须叫bootstrap.yml,不然从gitee中获取配置信息报错)
+6.user_provider2:为了测试负载均衡配的
+
+ps:
+Eureka已经集成Ribbon,所以无需引入依赖,要想使用Ribbon，直接在RestTemplate的配置方法上添加@LoadBalanced注解即可
+

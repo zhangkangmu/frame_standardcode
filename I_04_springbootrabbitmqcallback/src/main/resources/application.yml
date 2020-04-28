@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    # 开启confirms模式
+    publisher-confirms: true
+    # 开启Returns模式
+    publisher-returns: true
+    listener:
+      simple:
+        # 设置手动确认消息
+        acknowledge-mode: manual
+        # 设置消费者每次读取消息的条数1条
+        prefetch: 1
+server:
+  port: 8080

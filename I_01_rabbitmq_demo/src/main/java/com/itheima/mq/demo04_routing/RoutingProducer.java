@@ -1,4 +1,4 @@
-package com.itheima.mq.routing;
+package com.itheima.mq.demo04_routing;
 
 import com.itheima.mq.utils.ConnectionUtils;
 import com.rabbitmq.client.BuiltinExchangeType;
@@ -28,6 +28,8 @@ public class RoutingProducer {
             for (int i = 0; i < 3; i++) {
                 switch (i) {
                     case 0:
+
+
                         routingKey = "log.info";
                         break;
                     case 1:

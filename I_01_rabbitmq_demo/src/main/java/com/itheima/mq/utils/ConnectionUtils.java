@@ -25,7 +25,7 @@ public class ConnectionUtils {
             //3、设置RabbitMQ服务端口，默认-1-factory.setPort(5672)
             factory.setPort(5672);
             //4、设置虚拟主机名字，默认/-factory.setVirtualHost("szitheima")
-            factory.setVirtualHost("szitheima");
+            factory.setVirtualHost("/szitheima");
             //5、设置用户连接名，默认guest-factory.setUsername("admin")
             factory.setUsername("admin");
             //6、设置链接密码，默认guest-factory.setPassword("admin")
