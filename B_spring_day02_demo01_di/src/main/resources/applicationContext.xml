@@ -15,7 +15,7 @@
             value：表示的是值的注入
             ref：表示对象的注入（对应spring容器中声明的id的值）
     -->
-    <bean  id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean  id="accountService" class="com.hong.service.impl.AccountServiceImpl">
         <!--构造方法-->
         <!--<constructor-arg name="name" type="java.lang.String" index="0" value="冯小刚"></constructor-arg>-->
         <!--<constructor-arg name="age" type="java.lang.Integer" index="1" value="50"></constructor-arg>-->
@@ -37,13 +37,13 @@
         <!--<property name="birthday" ref="date"></property>-->
     <!--</bean>-->
     <!--p空间完成注入-->
-    <bean  id="accountService2" class="com.itheima.service.impl.AccountServiceImpl2" p:name="赵薇" p:age="20" p:birthday-ref="date">
+    <bean id="accountService2" class="com.hong.service.impl.AccountServiceImpl2" p:name="赵薇" p:age="20" p:birthday-ref="date">
     </bean>
 
     <!--集合注入
         array和set和list标签是可以通用的
     -->
-    <bean id="accountService3" class="com.itheima.service.impl.AccountServiceImpl3">
+    <bean id="accountService3" class="com.hong.service.impl.AccountServiceImpl3">
         <property name="arrays">
             <array>
                 <value>张三</value>
@@ -90,5 +90,5 @@
     <bean id="date" class="java.util.Date"></bean>
 
     <!--5.6 在Service中，注入Dao-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl"></bean>
 </beans>

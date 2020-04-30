@@ -8,7 +8,7 @@
                           http://www.springframework.org/schema/context
                           http://www.springframework.org/schema/context/spring-context.xsd">
     <!--创建Dao-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl">
         <property name="queryRunner" ref="queryRunner"></property>
     </bean>
 </beans>

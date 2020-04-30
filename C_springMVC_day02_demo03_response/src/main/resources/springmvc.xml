@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
     <!--（1）：配置组件的扫描（扫描控制层的组件@Controller）-->
-    <context:component-scan base-package="com.itheima"></context:component-scan>
+    <context:component-scan base-package="com.hong"></context:component-scan>
 
     <!--（2）：开启springmvc的三大组件（处理器映射器，处理器适配器，视图解析器(可有可无)）
     springmvc的注解驱动（自动开启处理器映射器，处理器适配器等配置）

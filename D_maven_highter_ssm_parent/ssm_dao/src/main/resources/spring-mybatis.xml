@@ -26,7 +26,7 @@
         <!--
             指定别名配置
         -->
-        <property name="typeAliasesPackage" value="com.itheima.ssm.domain" />
+        <property name="typeAliasesPackage" value="com.hong.ssm.domain" />
     </bean>
 
 
@@ -35,6 +35,6 @@
     -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!--指定Dao接口的包-->
-        <property name="basePackage" value="com.itheima.ssm.dao" />
+        <property name="basePackage" value="com.hong.ssm.dao" />
     </bean>
 </beans>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans>
     <!--创建Service对象，IOC-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl">
         <!--name对应AccountServiceImpl类中的dao属性，ref对应bean id的属性值，DI-->
         <property name="dao" ref="accountDao"/>
     </bean>
 
     <!--创建Dao对象，IOC-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"/>
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl"/>
 </beans>

@@ -32,7 +32,7 @@
         <!--注入数据源（必须要有）-->
         <property name="dataSource" ref="dataSource"></property>
         <!--配置别名-->
-        <property name="typeAliasesPackage" value="com.itheima.ssm.domain"></property>
+        <property name="typeAliasesPackage" value="com.hong.ssm.domain"></property>
         <!--spring提供的一个入口，整合Mybatis的配置文件的入口（可有可无）-->
         <!--<property name="configLocation" value="classpath:sqlMapConfig.xml123"></property>-->
         <!--spring提供的一个入口，整合Mybatis的映射文件的入口（可有可无）-->
@@ -45,7 +45,7 @@
 
     <!--3：配置映射扫描的配置，该配置通过接口加载映射文件，让Dao的接口可以被spring管理-->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.itheima.ssm.dao"></property>
+        <property name="basePackage" value="com.hong.ssm.dao"></property>
     </bean>
 
     <!--配置spring的声明式事务处理-->

@@ -12,7 +12,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.itheima.domain"/>
+        <package name="com.hong.domain"/>
     </typeAliases>
 
     <environments default="heima87">
@@ -29,6 +29,6 @@
     </environments>
 
     <mappers>
-        <package name="com.itheima.dao"/>
+        <package name="com.hong.dao"/>
     </mappers>
 </configuration>

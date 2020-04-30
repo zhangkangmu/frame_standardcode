@@ -33,7 +33,7 @@
     <!--<bean id="userService" class="com.itheima.service.impl.UserServiceImpl"></bean>-->
 
     <!--3：配置需要暴露的业务接口及实现类（注解）,使用了这个要在Service里加上阿里云的@Service-->
-    <dubbo:annotation package="com.itheima.service"></dubbo:annotation>
+    <dubbo:annotation package="com.hong.service"></dubbo:annotation>
     <!--加载spring-dubbo.xml的同时，加载spring-service.xml-->
     <!--<import resource="classpath:spring-service.xml"></import>-->
 

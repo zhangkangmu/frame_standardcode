@@ -9,7 +9,7 @@
                           http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--创建Service-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
     </bean>
 

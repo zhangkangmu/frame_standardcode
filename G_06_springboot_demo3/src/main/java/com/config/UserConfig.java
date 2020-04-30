@@ -1,6 +1,6 @@
 package com.config;
 
-import com.itheima.User;
+import com.hong.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

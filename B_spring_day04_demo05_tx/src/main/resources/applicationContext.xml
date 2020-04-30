@@ -20,13 +20,13 @@
     </bean>
 
     <!--创建AccountDaoImpl-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl">
         <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
     <!--创建AccountServiceImpl-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
         <!--编程式事务控制第三步：注入TransactionTemplate-->
         <property name="transactionTemplate" ref="transactionTemplate"></property>

@@ -11,9 +11,9 @@
                           http://www.springframework.org/schema/aop
                           http://www.springframework.org/schema/aop/spring-aop.xsd">
     <!--1：创建目标对象-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl"></bean>
     <!--2：创建切面类对象（不具有AOP的灵魂）-->
-    <bean id="logger" class="com.itheima.util.Logger"></bean>
+    <bean id="logger" class="com.hong.util.Logger"></bean>
     <!--3：配置AOP
         (1)：定义切面，让切面生效（具有灵魂）
         (2)：定义AOP中的通知类型
@@ -34,7 +34,7 @@
             execution(* com.itheima.service..*.*(..))
                 表示：返回类型任意，com.itheima.service包及其子包中的所有类，类中的所有方法，参数任意
             -->
-            <aop:before method="printLog" pointcut="execution(* com.itheima.service..*.*(..))"></aop:before>
+            <aop:before method="printLog" pointcut="execution(* com.hong.service..*.*(..))"></aop:before>
             <!-- 指定参数的通知方法  -->
             <!--<aop:before method="printLog" pointcut="execution(* com.itheima.service..*.*(int,String))"></aop:before>-->
         </aop:aspect>

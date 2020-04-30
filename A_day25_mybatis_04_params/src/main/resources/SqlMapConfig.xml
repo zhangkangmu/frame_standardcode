@@ -19,7 +19,7 @@
         <!--<typeAlias type="com.itheima.domain.QueryVO" alias="vo"/>-->
 
         <!--可以指定一个package。Mybatis会把这个package里所有JavaBean全部自动注册别名。类名即别名-->
-        <package name="com.itheima.domain"/>
+        <package name="com.hong.domain"/>
     </typeAliases>
 
     <environments default="heima87">
@@ -53,6 +53,6 @@
 
         <!--<mapper class="com.itheima.dao.UserDao"/>-->
 
-        <package name="com.itheima.dao"/>
+        <package name="com.hong.dao"/>
     </mappers>
 </configuration>

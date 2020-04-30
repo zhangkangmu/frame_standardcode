@@ -8,7 +8,7 @@
                           http://www.springframework.org/schema/context
                           http://www.springframework.org/schema/context/spring-context.xsd">
     <!--创建BeanFactory（）使用目标对象，创建代理对象，对Service类的方法增强-->
-    <bean id="beanFactory" class="com.itheima.factory.BeanFactory">
+    <bean id="beanFactory" class="com.hong.factory.BeanFactory">
         <property name="accountService" ref="accountService"></property>
         <property name="transactionManager" ref="transactionManager"></property>
     </bean>
@@ -38,13 +38,13 @@
     </bean>
 
     <!--创建Service-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
         <!--<property name="transactionManager" ref="transactionManager"></property>-->
     </bean>
 
     <!--创建Dao-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl">
         <property name="queryRunner" ref="queryRunner"></property>
         <property name="connectionUtils" ref="connectionUtils"></property>
     </bean>
@@ -52,12 +52,12 @@
 
     <!--/********************************************************/-->
     <!--创建连接对象-->
-    <bean id="connectionUtils" class="com.itheima.utils.ConnectionUtils">
+    <bean id="connectionUtils" class="com.hong.utils.ConnectionUtils">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
     <!--创建事务管理器-->
-    <bean id="transactionManager" class="com.itheima.utils.TransactionManager">
+    <bean id="transactionManager" class="com.hong.utils.TransactionManager">
         <property name="connectionUtils" ref="connectionUtils"></property>
     </bean>
 </beans>

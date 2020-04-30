@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hong.dao.UserDao">
+    <select id="queryAll" resultType="com.hong.domain.User">
+        select * from user
+    </select>
+
+    <!--
+    注意：只有select标签才有resultType属性
+        resultType是用于设置   查询结果集封装的类型
+
+
+    insert标签：用于配置插入语句
+        id：对应映射器里的方法名
+        parameterType：方法参数类型，写全限定类名
+
+    标签体里边写insert语句。注意：
+        参数值写 #{JavaBean的属性名}。OGNL表达式
+
+        selectKey标签：用于和insert配合，在插入数据成功时，获取最新插入的那个主键值
+            resultType：查询得到最新主键值的类型
+            keyProperty：查询得到的主键值，设置给参数的哪个属性
+            order：在insert语句之前/之后，查询最新主键值。MySql是AFTER
+    -->
+    <insert id="save" parameterType="com.hong.domain.User">
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+
+        insert into user (id,username,birthday,sex,address)
+        values(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+<!--
+    错误的写法
+    <insert id="save" parameterType="com.itheima.domain.User">
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+
+	注意:birthday是会自动转成jdbc的,这就是#的其中一个作用,所以不能用"${}"
+        insert into user (id,username,birthday,sex,address)
+        values(#{id},#{username},'${birthday}',#{sex},#{address})
+    </insert>-->
+
+    <update id="edit" parameterType="com.hong.domain.User">
+        update user set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address} where id=#{id}
+    </update>
+
+    <!--
+    注意：如果只有一个参数，并且是简单类型（8种基本数据类型，和String），#{}里可以写任意值
+    -->
+    <delete id="delete" parameterType="int">
+        delete from user where id = #{abc}
+    </delete>
+
+    <select id="findById" parameterType="int" resultType="com.hong.domain.User">
+        select * from user where id = #{uid}
+    </select>
+
+    <select id="totalCount" resultType="int">
+        select count(*) from user
+    </select>
+
+	<!-- 可以防止sql注入,用这个 因为这里适用的是预编译-->
+    <select id="searchByUsername1" parameterType="java.lang.String" resultType="com.hong.domain.User">
+        select * from user where username like #{username}
+    </select>
+    <!--${value}：固定写法，在只有一个参数，并且是简单类型时 获取参数值  这里是直接拼接字符串-->
+    <select id="searchByUsername2" parameterType="java.lang.String" resultType="com.hong.domain.User">
+        select * from user where username like '%${value}%'
+    </select>
+	<!-- 这里一定要是这样:${value},不能随便写其他的字符串,固定用法,这里没有 引号 -->
+    <select id="searchByOrder" parameterType="java.lang.String" resultType="com.hong.domain.User">
+        select * from user order by ${value} desc
+    </select>
+</mapper>

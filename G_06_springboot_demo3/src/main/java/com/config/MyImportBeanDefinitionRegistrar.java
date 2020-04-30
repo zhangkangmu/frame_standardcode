@@ -1,7 +1,7 @@
 package com.config;
 
-import com.itheima.Role;
-import com.itheima.User;
+import com.hong.Role;
+import com.hong.User;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;

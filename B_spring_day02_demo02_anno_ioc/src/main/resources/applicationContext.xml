@@ -10,5 +10,5 @@
     <!--使用注解的形式，开启一个组件的扫描
         base-package="com.itheima"：包的扫描范围，在com.itheima包及其子包中的所有类，都可以使用组件@Component
     -->
-    <context:component-scan base-package="com.itheima"></context:component-scan>
+    <context:component-scan base-package="com.hong"></context:component-scan>
 </beans>

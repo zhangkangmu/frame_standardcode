@@ -23,14 +23,14 @@
     </bean>
 
     <!--创建AccountDaoImpl-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl">
         <!--可以这样设置jdbcTemplate属性,但是麻烦,也可以设置数据源,可以这样设置jdbcTemplate属性会自动设置好数据源-->
         <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
     <!--创建AccountServiceImpl-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
     </bean>
 
@@ -69,7 +69,7 @@
     </tx:advice>
     <!--声明式事务控制第三步：配置AOP，让事务管理器（通知） 控制 Service层的方法（切入点）：XML-->
     <aop:config>
-        <aop:pointcut id="myAspect" expression="execution(* com.itheima.service..*.*(..))"></aop:pointcut>
+        <aop:pointcut id="myAspect" expression="execution(* com.hong.service..*.*(..))"></aop:pointcut>
         <aop:advisor advice-ref="myAdvice" pointcut-ref="myAspect"></aop:advisor>
     </aop:config>
 

@@ -38,7 +38,7 @@
     <!-- 3：AOP声明式事务配置（配置切入点，通知关联切入点） -->
     <aop:config>
         <!--切点指点-->
-        <aop:pointcut id="tranpointcut" expression="execution(* com.itheima.ssm.service..*.*(..))" />
+        <aop:pointcut id="tranpointcut" expression="execution(* com.hong.ssm.service..*.*(..))" />
         <!--配置通知-->
         <aop:advisor advice-ref="txAdvice" pointcut-ref="tranpointcut" />
     </aop:config>

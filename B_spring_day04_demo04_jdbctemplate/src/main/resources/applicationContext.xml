@@ -24,7 +24,7 @@
     <!--</bean>-->
 
     <!--创建AccountDaoImpl-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl">
         <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
         <property name="dataSource" ref="dataSource"></property>
     </bean>

@@ -25,7 +25,7 @@
     <!--3：配置需要订阅的业务接口及引用，注意：通过id引用，id的值为在Controller类中的接口引用的名称（配置文件XML的方式）-->
     <!--<dubbo:reference interface="com.itheima.service.UserService" id="userService"></dubbo:reference>-->
     <!--3：配置需要订阅的业务接口及引用（注解的方式）-->
-    <dubbo:annotation package="com.itheima.controller"></dubbo:annotation>
+    <dubbo:annotation package="com.hong.controller"></dubbo:annotation>
 
     <!--4：开启启动是不检查（智能容错），默认是启动时检查 check="true"-->
     <!--服务消费者：设置超时时间-->

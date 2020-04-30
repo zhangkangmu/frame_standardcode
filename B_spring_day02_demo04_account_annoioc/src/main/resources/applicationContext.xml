@@ -11,7 +11,7 @@
     <!--难记的东西-->
     <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
     <!--注解开发，添加一个组件的扫描-->
-    <context:component-scan base-package="com.itheima"></context:component-scan>
+    <context:component-scan base-package="com.hong"></context:component-scan>
 
 
     <import resource="classpath:applicationContext-datasource.xml"></import>

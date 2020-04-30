@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hong.dao.AccountDao">
+
+    <select id="queryAllUserAccount" resultType="UserAccount">
+        select a.*, u.username, u.sex from account a left join user u on a.uid = u.id
+    </select>
+
+    <!--
+    resultType，要求：JavaBean属性名，和 字段名一致，否则封装不进去
+    resultMap， 可以设置 JavaBean属性名 和 字段名的对应关系。
+
+    -->
+    <select id="queryAll" resultMap="accountUserMap">
+        select a.id aid, a.uid uid, a.money money, u.* from account a left join user u on a.uid = u.id
+    </select>
+    <resultMap id="accountUserMap" type="Account">
+        <id property="id" column="aid"/>
+        <result property="uid" column="uid"/>
+        <result property="money" column="money"/>
+
+        <!--
+        association：用于封装 关联的那个JavaBean的数据。Mybatis提供的，用于对一关联数据的封装
+            现在封装的就是Account里关联的User的数据
+        -->
+        <association property="user" javaType="User">
+            <id property="id" column="id"/>
+            <result property="username" column="username"/>
+            <result property="birthday" column="birthday"/>
+            <result property="sex" column="sex"/>
+            <result property="address" column="address"/>
+        </association>
+    </resultMap>
+</mapper>

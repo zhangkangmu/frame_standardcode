@@ -17,7 +17,7 @@
         - prototype：多例的。
         测试bean对象的生命周期（单例对象、多例对象）
     -->
-    <bean  id="accountService" class="com.itheima.service.impl.AccountServiceImpl"
+    <bean  id="accountService" class="com.hong.service.impl.AccountServiceImpl"
            scope="prototype"
            init-method="init" destroy-method="destroy"></bean>
 </beans>

@@ -9,8 +9,8 @@
             id：创建对象的唯一标识
             class：对应的创建对象的全路径（底层：通过反射）
     -->
-    <bean  id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+    <bean  id="accountService" class="com.hong.service.impl.AccountServiceImpl"></bean>
 
     <!--创建Dao对象-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl"></bean>
 </beans>
