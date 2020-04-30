@@ -18,10 +18,10 @@ import javax.annotation.PreDestroy;
 // 组件
 /**
  *  @Component：相当于在spring容器中定义：
- *    <bean id="accountServiceImpl" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+ *    <bean id="accountServiceImpl" class="com.hong.service.impl.AccountServiceImpl"></bean>
  *    此时的id表示类的名称，且首字母小写
  *  @Component("accountService")
- *    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+ *    <bean id="accountService" class="com.hong.service.impl.AccountServiceImpl"></bean>
  */
 // @Component("accountService")
 @Service("accountService")

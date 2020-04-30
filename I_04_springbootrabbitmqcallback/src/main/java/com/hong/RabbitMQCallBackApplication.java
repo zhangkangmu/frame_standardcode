@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima
+ * @description com.hong
  * @date 2020-4-27
  */
 @SpringBootApplication

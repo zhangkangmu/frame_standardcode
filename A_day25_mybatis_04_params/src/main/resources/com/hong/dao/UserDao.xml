@@ -13,7 +13,7 @@
         2. 使用resultMap代替resultType：配置字段名  和  JavaBean属性名的对应关系
     -->
     <!--第一种方式:起别名-->
-    <!--<select id="queryAllUser2" resultType="com.itheima.domain.User2">
+    <!--<select id="queryAllUser2" resultType="com.hong.domain.User2">
         SELECT id userId, username, birthday userBirthday, sex userSex, address userAddress FROM user
     </select>-->
     <!--第二种方式:使用resultmap

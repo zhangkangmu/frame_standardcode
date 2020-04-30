@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.feign.fallback
+ * @description com.hong.feign.fallback
  * @date 2020-4-25
  */
 @Component  //因为失败的话会跳转到这个页面转发,所以要加入容器中

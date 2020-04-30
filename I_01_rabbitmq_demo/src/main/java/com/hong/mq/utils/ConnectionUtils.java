@@ -7,7 +7,7 @@ import com.rabbitmq.client.ConnectionFactory;
  * RabbitMQ连接工具抽取
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.mq.utils
+ * @description com.hong.mq.utils
  * @date 2020-4-26
  */
 public class ConnectionUtils {
@@ -24,8 +24,8 @@ public class ConnectionUtils {
             factory.setHost("localhost");
             //3、设置RabbitMQ服务端口，默认-1-factory.setPort(5672)
             factory.setPort(5672);
-            //4、设置虚拟主机名字，默认/-factory.setVirtualHost("szitheima")
-            factory.setVirtualHost("/szitheima");
+            //4、设置虚拟主机名字，默认/-factory.setVirtualHost("szhong")
+            factory.setVirtualHost("/szhong");
             //5、设置用户连接名，默认guest-factory.setUsername("admin")
             factory.setUsername("admin");
             //6、设置链接密码，默认guest-factory.setPassword("admin")

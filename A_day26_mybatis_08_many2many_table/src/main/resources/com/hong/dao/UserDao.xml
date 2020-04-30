@@ -20,7 +20,7 @@
         <!--
     collection:用于封装JavaBean中某一属性关联的集合，用于一对多情形
     property：封装哪个属性关联的集合
-    ofType：集合中的数据类型是什么。这里是com.itheima.domain.Account，使用了别名
+    ofType：集合中的数据类型是什么。这里是com.hong.domain.Account，使用了别名
  -->
         <collection property="roles" ofType="Role">
             <id property="id" column="rid"/>

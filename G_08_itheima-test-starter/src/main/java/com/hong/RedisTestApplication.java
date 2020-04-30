@@ -8,7 +8,7 @@ import redis.clients.jedis.Jedis;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima
+ * @description com.hong
  * @date 2020-4-22
  */
 @SpringBootApplication

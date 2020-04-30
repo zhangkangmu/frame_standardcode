@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * TTL过期消息配置
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.config
+ * @description com.hong.config
  * @date 2020-4-27
  */
 @Configuration

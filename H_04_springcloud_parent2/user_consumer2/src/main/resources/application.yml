@@ -60,4 +60,4 @@ feign:
 # 配置日志输出级别
 logging:
   level:
-    com.itheima: debug
+    com.hong: debug

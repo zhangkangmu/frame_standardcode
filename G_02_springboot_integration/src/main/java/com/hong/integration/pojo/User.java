@@ -6,7 +6,7 @@ import java.io.Serializable;
  * 用户信息业务实体
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.integration.pojo
+ * @description com.hong.integration.pojo
  * @date 2020-4-21
  */
 public class User implements Serializable {

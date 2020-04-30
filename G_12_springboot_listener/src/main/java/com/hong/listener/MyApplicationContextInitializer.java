@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 用于：做些初始化工作  通常用于web环境，用于激活配置，web上下问的属性注册。
  * 需要配置META-INF/spring.factories 配置之后才能加载调用
  * @author zhangyuhong
- * @description com.itheima.listener
+ * @description com.hong.listener
  */
 public class MyApplicationContextInitializer implements ApplicationContextInitializer {
     @Override

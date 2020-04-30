@@ -10,7 +10,7 @@ import java.io.IOException;
  * 完成消费者-通配符模式
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.mq.simple
+ * @description com.hong.mq.simple
  * @date 2020-4-26
  */
 public class TopicConsumer2 {

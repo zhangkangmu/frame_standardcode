@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.controller
+ * @description com.hong.controller
  * @date 2020-4-21
  */
 @RestController

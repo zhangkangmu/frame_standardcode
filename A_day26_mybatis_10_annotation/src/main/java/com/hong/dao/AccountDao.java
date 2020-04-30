@@ -27,7 +27,7 @@ public interface AccountDao {
                     column = "uid",
                     //配置：user 要调用另外一个功能，查询得到一个User对象
                     one = @One(
-                            select = "com.itheima.dao.UserDao.findById",
+                            select = "com.hong.dao.UserDao.findById",
                             //使用懒加载。不需要在核心配置文件里开启懒加载的开关，就可以实现懒加载功能
                             fetchType = FetchType.LAZY
                     )

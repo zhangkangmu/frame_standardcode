@@ -11,7 +11,7 @@ import java.util.Map;
  * Spring的判断实现
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.config
+ * @description com.hong.config
  * @date 2020-4-22
  */
 public class OnClassCondition implements Condition {

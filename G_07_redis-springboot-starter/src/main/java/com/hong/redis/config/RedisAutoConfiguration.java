@@ -10,7 +10,7 @@ import redis.clients.jedis.Jedis;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.redis.config
+ * @description com.hong.redis.config
  * @date 2020-4-22
  */
 @Configuration

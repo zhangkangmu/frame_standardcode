@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.config
+ * @description com.hong.config
  * @date 2020-4-22
  */
 @Configuration  //相当<beans></beans>

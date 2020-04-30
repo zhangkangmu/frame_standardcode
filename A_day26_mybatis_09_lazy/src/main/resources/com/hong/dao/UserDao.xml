@@ -20,7 +20,7 @@
 
         <!--
         当需要使用到用户关联的帐号集合里，调用一个方法：查询某一用户的帐号集合
-            com.itheima.dao.AccountDao.findByUid
+            com.hong.dao.AccountDao.findByUid
         -->
         <collection property="accounts" ofType="Account"
             select="com.hong.dao.AccountDao.findByUid"

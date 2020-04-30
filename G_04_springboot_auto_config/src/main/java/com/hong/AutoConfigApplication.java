@@ -7,7 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima
+ * @description com.hong
  * @date 2020-4-22
  */
 @SpringBootApplication

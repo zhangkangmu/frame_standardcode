@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author zhangyuhong
- * @description com.itheima
+ * @description com.hong
  */
 @SpringBootApplication
 public class SpringbootListenerApplication {

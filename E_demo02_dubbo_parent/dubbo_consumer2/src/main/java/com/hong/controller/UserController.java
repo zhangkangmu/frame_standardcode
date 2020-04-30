@@ -22,7 +22,7 @@ public class UserController {
 
     // 负载均衡策略：在集群负载均衡时，Dubbo 提供了多种均衡策略（包括随机random、轮询roundrobin、最少活跃调用数leastactive），缺省【默认】为random随机调用。
     // @Autowired
-    @Reference(loadbalance = "roundrobin") // 相当于：<dubbo:reference interface="com.itheima.service.UserService" id="userService"></dubbo:reference>
+    @Reference(loadbalance = "roundrobin") // 相当于：<dubbo:reference interface="com.hong.service.UserService" id="userService"></dubbo:reference>
     UserService userService;
 
     // 地址栏输入：user/findById.do?id=1

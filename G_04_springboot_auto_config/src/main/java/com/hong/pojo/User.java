@@ -3,7 +3,7 @@ package com.hong.pojo;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.pojo
+ * @description com.hong.pojo
  * @date 2020-4-22
  */
 public class User {

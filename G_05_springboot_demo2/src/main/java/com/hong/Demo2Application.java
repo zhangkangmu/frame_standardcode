@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima
+ * @description com.hong
  * @date 2020-4-22
  */
 @SpringBootApplication
@@ -37,9 +37,9 @@ public class Demo2Application {
         //System.out.println(user);
 
         //全路径获取-不使用
-        //Object user = context.getBean("com.itheima.User");
+        //Object user = context.getBean("com.hong.User");
         //System.out.println(user);
-        //Object role = context.getBean("com.itheima.Role");
+        //Object role = context.getBean("com.hong.Role");
         //System.out.println(role);
 
         //类型装配

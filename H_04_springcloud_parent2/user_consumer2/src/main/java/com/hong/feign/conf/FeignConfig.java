@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * Feign日志级别配置类
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.feign.conf
+ * @description com.hong.feign.conf
  * @date 2020-4-25
  */
 @Configuration

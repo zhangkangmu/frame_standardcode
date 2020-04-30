@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * 演示通配符案例
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.config
+ * @description com.hong.config
  * @date 2020-4-26
  */
 @Configuration

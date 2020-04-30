@@ -10,7 +10,7 @@ import java.io.IOException;
  * 实现死信队列消息监听
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.listener
+ * @description com.hong.listener
  * @date 2020-4-27
  */
 @Component

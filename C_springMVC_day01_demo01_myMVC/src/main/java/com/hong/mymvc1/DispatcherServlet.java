@@ -32,8 +32,8 @@ public class DispatcherServlet extends HttpServlet {
             //System.out.println(requestPath);
 
             //2. 找到@RequestMapping配置值，和requestPath相等的那个方法，然后调用它
-            //2.1 获取并遍历com.itheima.web包里的所有类
-            List<Class<?>> classList = ClassScannerUtils.getClasssFromPackage("com.itheima.web");
+            //2.1 获取并遍历com.hong.web包里的所有类
+            List<Class<?>> classList = ClassScannerUtils.getClasssFromPackage("com.hong.web");
             for (Class<?> clazz : classList) {
 
                 //2.2 获取类里所有的方法Method对象

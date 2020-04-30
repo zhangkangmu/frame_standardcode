@@ -23,7 +23,7 @@
     -->
     <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
     <!--3：配置需要订阅的业务接口及引用，注意：通过id引用，id的值为在Controller类中的接口引用的名称（配置文件XML的方式）-->
-    <!--<dubbo:reference interface="com.itheima.service.UserService" id="userService"></dubbo:reference>-->
+    <!--<dubbo:reference interface="com.hong.service.UserService" id="userService"></dubbo:reference>-->
     <!--3：配置需要订阅的业务接口及引用（注解的方式）-->
     <dubbo:annotation package="com.hong.controller"></dubbo:annotation>
 

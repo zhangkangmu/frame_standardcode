@@ -9,7 +9,7 @@ import com.rabbitmq.client.Connection;
  * 演示发送简单的MQ消息
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.mq.simple
+ * @description com.hong.mq.simple
  * @date 2020-4-26
  */
 public class SimpleProducer {

@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
  * 实现登录拦截全局过滤功能
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.filter
+ * @description com.hong.filter
  * @date 2020-4-25
  */
 @Component   //访问如果不行的话要看yml里是否配置了多一个前缀

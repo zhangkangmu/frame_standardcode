@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 配置延时队列案例相关信息
- * @description com.itheima.config
+ * @description com.hong.config
  */
 @Configuration
 public class DelayConfig {

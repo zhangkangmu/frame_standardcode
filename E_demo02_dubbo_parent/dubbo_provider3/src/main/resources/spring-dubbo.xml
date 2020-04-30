@@ -26,9 +26,9 @@
     <dubbo:protocol name="rmi" port="1099"></dubbo:protocol>
     <!--3：配置需要暴露的业务接口及实现类（配置文件XML）-->
     <!--暴露的业务接口-->
-    <!--<dubbo:service interface="com.itheima.service.UserService" ref="userService" protocol="dubbo"></dubbo:service>-->
+    <!--<dubbo:service interface="com.hong.service.UserService" ref="userService" protocol="dubbo"></dubbo:service>-->
     <!--实现类-->
-    <!--<bean id="userService" class="com.itheima.service.impl.UserServiceImpl"></bean>-->
+    <!--<bean id="userService" class="com.hong.service.impl.UserServiceImpl"></bean>-->
 
     <!--3：配置需要暴露的业务接口及实现类（注解）-->
     <dubbo:annotation package="com.hong.service"></dubbo:annotation>

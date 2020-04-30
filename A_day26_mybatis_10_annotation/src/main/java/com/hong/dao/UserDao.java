@@ -89,7 +89,7 @@ public interface UserDao {
                     column = "id",
                     many = @Many(
                             //调用一个功能：查询某一用户拥有的帐号集合
-                            select = "com.itheima.dao.AccountDao.findByUid",
+                            select = "com.hong.dao.AccountDao.findByUid",
                             fetchType = FetchType.LAZY
                     )
             )

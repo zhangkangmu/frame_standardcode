@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserController {
 
     // @Autowired
-    @Reference // 相当于：<dubbo:reference interface="com.itheima.service.UserService" id="userService"></dubbo:reference>
+    @Reference // 相当于：<dubbo:reference interface="com.hong.service.UserService" id="userService"></dubbo:reference>
     UserService userService;
 
     // 地址栏输入：user/findById.do?id=1

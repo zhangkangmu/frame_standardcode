@@ -17,6 +17,6 @@
 
     <!--映射器配置-->
     <mappers>
-        <mapper resource="com/itheima/dao/UserDao.xml"/>
+        <mapper resource="com/hong/dao/UserDao.xml"/>
     </mappers>
 </configuration>

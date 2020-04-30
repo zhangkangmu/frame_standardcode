@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.redis.config
+ * @description com.hong.redis.config
  * @date 2020-4-22
  */
 @ConfigurationProperties(prefix = "redis")

@@ -34,7 +34,7 @@
     </insert>
 <!--
     错误的写法
-    <insert id="save" parameterType="com.itheima.domain.User">
+    <insert id="save" parameterType="com.hong.domain.User">
         <selectKey resultType="int" keyProperty="id" order="AFTER">
             select last_insert_id()
         </selectKey>

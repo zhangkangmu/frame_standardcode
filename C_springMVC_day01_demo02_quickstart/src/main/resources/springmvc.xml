@@ -29,7 +29,7 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
-    <!--<bean id="stringToDateConverter" class="com.itheima.converter.StringToDateConverter"></bean>-->
+    <!--<bean id="stringToDateConverter" class="com.hong.converter.StringToDateConverter"></bean>-->
     <!--配置自定义类型转换器-->
     <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
         <property name="converters">

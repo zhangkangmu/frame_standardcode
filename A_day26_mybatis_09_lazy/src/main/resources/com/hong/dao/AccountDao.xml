@@ -19,7 +19,7 @@
         <result property="money" column="money"/>
 
         <!--
-        2. 当需要使用关联的那个User对象数据时，调用另外一个功能：com.itheima.dao.UserDao.findByUid
+        2. 当需要使用关联的那个User对象数据时，调用另外一个功能：com.hong.dao.UserDao.findByUid
             调用方法时，把uid字段的值作为参数，传递过去
         -->
         <association property="user" javaType="User"

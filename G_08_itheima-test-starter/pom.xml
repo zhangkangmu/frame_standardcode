@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.itheima</groupId>
-    <artifactId>G_08_itheima-test-starter</artifactId>
+    <groupId>com.hong</groupId>
+    <artifactId>G_08_hong-test-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
@@ -17,7 +17,7 @@
     <dependencies>
         <!--加入自定义启动器-->
         <dependency>
-            <groupId>com.itheima</groupId>
+            <groupId>com.hong</groupId>
             <artifactId>G_07_redis-springboot-starter</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

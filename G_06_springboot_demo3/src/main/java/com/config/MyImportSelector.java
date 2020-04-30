@@ -18,6 +18,6 @@ public class MyImportSelector implements ImportSelector{
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         //返回类的全路径名，有几个就创建几个bean
-        return new String[]{"com.itheima.User","com.itheima.Role"};
+        return new String[]{"com.hong.User","com.hong.Role"};
     }
 }

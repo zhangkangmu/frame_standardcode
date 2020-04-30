@@ -23,20 +23,20 @@
     -->
     <aop:config>
         <aop:aspect id="myAspect" ref="logger">
-            <!--<aop:before method="printLog" pointcut="execution(public void com.itheima.service.impl.AccountServiceImpl.saveAccount())"></aop:before>-->
-            <!--<aop:before method="printLog" pointcut="execution(public void com.itheima.service.impl.AccountServiceImpl.updateAccount(int))"></aop:before>-->
-            <!--<aop:before method="printLog" pointcut="execution(public int com.itheima.service.impl.AccountServiceImpl.deleteAccount())"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(public void com.hong.service.impl.AccountServiceImpl.saveAccount())"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(public void com.hong.service.impl.AccountServiceImpl.updateAccount(int))"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(public int com.hong.service.impl.AccountServiceImpl.deleteAccount())"></aop:before>-->
 
             <!--<aop:before method="printLog" pointcut="execution(void saveAccount())"></aop:before>-->
             <!--<aop:before method="printLog" pointcut="execution(void updateAccount(int))"></aop:before>-->
             <!--<aop:before method="printLog" pointcut="execution(int deleteAccount())"></aop:before>-->
             <!--
-            execution(* com.itheima.service..*.*(..))
-                表示：返回类型任意，com.itheima.service包及其子包中的所有类，类中的所有方法，参数任意
+            execution(* com.hong.service..*.*(..))
+                表示：返回类型任意，com.hong.service包及其子包中的所有类，类中的所有方法，参数任意
             -->
             <aop:before method="printLog" pointcut="execution(* com.hong.service..*.*(..))"></aop:before>
             <!-- 指定参数的通知方法  -->
-            <!--<aop:before method="printLog" pointcut="execution(* com.itheima.service..*.*(int,String))"></aop:before>-->
+            <!--<aop:before method="printLog" pointcut="execution(* com.hong.service..*.*(int,String))"></aop:before>-->
         </aop:aspect>
     </aop:config>
 </beans>

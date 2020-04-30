@@ -40,7 +40,7 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         try {
-            List<Class<?>> classList = ClassScannerUtils.getClasssFromPackage("com.itheima.web");
+            List<Class<?>> classList = ClassScannerUtils.getClasssFromPackage("com.hong.web");
             for (Class<?> clazz : classList) {
                 //判断类上是否有@Controller注解。如果没有，就跳过
                 boolean isController = clazz.isAnnotationPresent(Controller.class);

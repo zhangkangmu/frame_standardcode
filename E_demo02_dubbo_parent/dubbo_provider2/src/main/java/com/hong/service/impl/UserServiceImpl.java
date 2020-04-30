@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @Version V1.0
  */
 @Transactional
-@Service(protocol = "dubbo") // 相当于：<dubbo:service interface="com.itheima.service.UserService" ref="userService"></dubbo:service>
+@Service(protocol = "dubbo") // 相当于：<dubbo:service interface="com.hong.service.UserService" ref="userService"></dubbo:service>
 public class UserServiceImpl implements UserService {
 
     @Autowired

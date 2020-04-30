@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.pojo
+ * @description com.hong.pojo
  * @date 2020-4-21
  */
 @Component

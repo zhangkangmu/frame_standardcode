@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.controller
+ * @description com.hong.controller
  * @date 2020-4-23
  */
 @RestController

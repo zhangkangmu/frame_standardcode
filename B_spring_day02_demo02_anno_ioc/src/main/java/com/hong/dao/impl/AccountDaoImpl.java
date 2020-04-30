@@ -11,10 +11,10 @@ import org.springframework.stereotype.Repository;
 // 组件
 /**
  *  @Component：相当于在spring容器中定义：
- *    <bean id="accountDaoImpl" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+ *    <bean id="accountDaoImpl" class="com.hong.dao.impl.AccountDaoImpl"></bean>
  *    此时的id表示类的名称，且首字母小写
  *  @Component("accountDao")
- *    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+ *    <bean id="accountDao" class="com.hong.dao.impl.AccountDaoImpl"></bean>
  *  @Controller、@Service、@Repository称之为@Component的衍生组件
  *    @Controller：表现层组件，SpringMVC场景
  *    @Service：业务层组件

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 主要是包装生产者请地址、输入与出输
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.feign
+ * @description com.hong.feign
  * @date 2020-4-25
  */
 //1.绑定生产者的服务名称(Eureka)

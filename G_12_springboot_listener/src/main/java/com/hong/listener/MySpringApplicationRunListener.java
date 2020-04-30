@@ -9,7 +9,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
  * SpringApplication run方法的监听器，当我们使用SpringApplication调用Run方法的时候触发该监听器回调方法。
  * 需要配置META/spring.factories 配置之后才能加载调用
  * @author zhangyuhong
- * @description com.itheima.listener
+ * @description com.hong.listener
  */
 public class MySpringApplicationRunListener implements SpringApplicationRunListener {
 

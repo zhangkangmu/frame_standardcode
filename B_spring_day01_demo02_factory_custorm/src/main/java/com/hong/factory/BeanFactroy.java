@@ -77,7 +77,7 @@ public class BeanFactroy {
                             // 2：将propertyObj对象注入给obj对象中的dao属性
                             // 根据属性名称获取对应的属性
                             Field field = obj.getClass().getDeclaredField(name);  // 获取AccountServiceImpl类中的AccountDao dao;
-                            // 让obj对象中的属性，可以被修改的（不添加报错can not access a member of class com.itheima.service.impl.AccountServiceImpl with modifiers ）
+                            // 让obj对象中的属性，可以被修改的（不添加报错can not access a member of class com.hong.service.impl.AccountServiceImpl with modifiers ）
                             field.setAccessible(true);
                             // 将propertyObj对象注入给obj对象，通过Field字段完成
                             field.set(obj,propertyObj);

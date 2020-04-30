@@ -15,7 +15,7 @@ sex: 1
 user1:
   name: zhangyuhong1
   age: 18
-  addr: szitheima
+  addr: szhong
   #对象中的集合  -后面要有空格
   userListObj:
     - name: zhangyuhong-list
@@ -25,7 +25,7 @@ user1:
       age: 18
       addr: bj
 # 对象配置方式二(了解)：
-user2: {name: zhangyuhong,age: 18,addr: szitheima}
+user2: {name: zhangyuhong,age: 18,addr: szhong}
 
 #配置集合 -:代表对象的开始
 #可以通过  @Value("${userList2[0]}") 获取

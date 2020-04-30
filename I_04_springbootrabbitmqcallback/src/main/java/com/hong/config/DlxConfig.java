@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * 死信队列配置类
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.config
+ * @description com.hong.config
  * @date 2020-4-27
  */
 @Configuration

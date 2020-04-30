@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * 用户信息持久化接口
  * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.dao
+ * @description com.hong.dao
  * @date 2020-4-23
  */
 //JpaRepository<目标,主键的数据类型>
