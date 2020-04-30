@@ -5,7 +5,6 @@ import java.util.Map;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  * 自定义mybatis的配置类
  */
 public class Configuration {

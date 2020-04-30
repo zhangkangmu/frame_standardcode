@@ -13,8 +13,7 @@ import java.util.Map;
 /**
  * @ClassName BeanFactroy
  * @Description TODO
- * @Author ly
- *
+
  * @Date 2020/3/14 11:19
  * @Version V1.0
  * spring的ioc实现原理

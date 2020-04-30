@@ -2,7 +2,6 @@ package com.itheima.mybatis.sqlsession;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  */
 public interface SqlSessionFactory {
 

@@ -10,7 +10,6 @@ import java.sql.Connection;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  * SqlSession接口的实现类
  */
 public class DefaultSqlSession implements SqlSession {

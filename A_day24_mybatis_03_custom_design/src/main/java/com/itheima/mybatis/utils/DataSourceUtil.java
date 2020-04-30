@@ -7,7 +7,6 @@ import java.sql.DriverManager;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  * 用于创建数据源的工具类
  */
 public class DataSourceUtil {

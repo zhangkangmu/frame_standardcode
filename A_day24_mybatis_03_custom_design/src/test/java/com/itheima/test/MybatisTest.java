@@ -12,7 +12,6 @@ import java.util.List;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  * mybatis的入门案例
  */
 public class MybatisTest {

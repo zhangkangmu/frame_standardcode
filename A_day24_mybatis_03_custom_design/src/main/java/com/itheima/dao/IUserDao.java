@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  *
  * 用户的持久层接口
  */

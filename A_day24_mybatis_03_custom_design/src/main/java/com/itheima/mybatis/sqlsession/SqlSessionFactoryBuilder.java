@@ -8,7 +8,6 @@ import java.io.InputStream;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  *  用于创建一个SqlSessionFactory对象
  */
 public class SqlSessionFactoryBuilder {

@@ -7,8 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * @ClassName Client
  * @Description TODO
- * @Author ly
- *
+
  * @Date 2020/3/14 11:10
  * @Version V1.0
  */

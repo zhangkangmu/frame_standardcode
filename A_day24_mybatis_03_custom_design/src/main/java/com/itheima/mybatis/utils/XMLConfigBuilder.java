@@ -22,7 +22,6 @@ import java.util.Map;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  *  用于解析配置文件
  */
 public class XMLConfigBuilder {

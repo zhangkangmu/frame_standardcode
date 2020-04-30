@@ -7,7 +7,6 @@ import com.itheima.mybatis.sqlsession.SqlSessionFactory;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  * SqlSessionFactory接口的实现类
  */
 public class DefaultSqlSessionFactory implements SqlSessionFactory{

@@ -10,7 +10,6 @@ import java.util.Map;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  */
 public class MapperProxy implements InvocationHandler {
 

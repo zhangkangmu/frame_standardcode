@@ -5,8 +5,7 @@ import com.itheima.dao.AccountDao;
 /**
  * @ClassName AccountDaoImpl
  * @Description TODO
- * @Author ly
- *
+
  * @Date 2020/3/14 11:07
  * @Version V1.0
  */

@@ -5,8 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * @ClassName AccountDaoImpl
- * @Author ly
- * @Date 2020/3/15 10:35
+ @Date 2020/3/15 10:35
  * @Version V1.0
  */
 // 组件

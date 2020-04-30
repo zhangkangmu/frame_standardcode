@@ -5,7 +5,6 @@ import java.util.Date;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  */
 public class User implements Serializable{
 

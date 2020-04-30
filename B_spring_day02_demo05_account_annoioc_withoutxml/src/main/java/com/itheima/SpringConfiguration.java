@@ -2,9 +2,7 @@ package com.itheima;
 
 /**
  * @ClassName SpringConfiguration
- *
- * @Author ly
- * @Company
+
  * @Date 2020/3/15 15:48
  * @Version V1.0
  */

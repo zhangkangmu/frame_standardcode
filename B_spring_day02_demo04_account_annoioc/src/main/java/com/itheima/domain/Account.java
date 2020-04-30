@@ -2,8 +2,7 @@ package com.itheima.domain;
 
 /**
  * @ClassName Account
- * @Author ly
- * @Company
+ @Company
  * @Date 2020/3/15 14:18
  * @Version V1.0
  */

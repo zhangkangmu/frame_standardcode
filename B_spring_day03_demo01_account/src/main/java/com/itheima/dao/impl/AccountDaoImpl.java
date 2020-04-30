@@ -13,8 +13,7 @@ import java.util.List;
 /**
  * @ClassName AccountDaoImpl
  * @Description TODO
- * @Author ly
- * @Company
+ @Company
  * @Date 2020/3/15 14:21
  * @Version V1.0
  */

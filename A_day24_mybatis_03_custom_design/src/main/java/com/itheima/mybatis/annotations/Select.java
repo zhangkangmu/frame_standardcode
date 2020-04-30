@@ -7,7 +7,6 @@ import java.lang.annotation.Target;
 
 /**
  * @author
- * @Company http://www.ithiema.com
  * 查询的注解
  */
 @Retention(RetentionPolicy.RUNTIME)

@@ -10,8 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * @ClassName UserServiceImpl
  * @Description TODO
- * @Author ly
- *
  * @Date 2020/3/27 11:37
  * @Version V1.0
  */

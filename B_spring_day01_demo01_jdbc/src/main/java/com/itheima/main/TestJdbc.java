@@ -5,8 +5,7 @@ import java.sql.*;
 /**
  * @ClassName TestJdbc
  * @Description TODO
- * @Author ly
- *
+
  * @Date 2020/3/14 10:41
  * @Version V1.0
  */

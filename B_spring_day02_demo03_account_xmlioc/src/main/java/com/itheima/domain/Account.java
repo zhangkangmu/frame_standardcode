@@ -2,8 +2,7 @@ package com.itheima.domain;
 
 /**
  * @ClassName Account
- * @Author ly
- * @Date 2020/3/15 14:18
+ @Date 2020/3/15 14:18
  * @Version V1.0
  */
 public class Account {

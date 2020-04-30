@@ -10,8 +10,7 @@ import java.lang.reflect.Proxy;
 /**
  * @ClassName BeanFactory
  * @Description TODO
- * @Author ly
- * @Company
+ @Company
  * @Date 2020/3/16 11:42
  * @Version V1.0
  */

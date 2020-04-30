@@ -6,8 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @ClassName Client
- * @Author ly
- * @Date 2020/3/14 11:10
+ @Date 2020/3/14 11:10
  * @Version V1.0
  */
 public class Client {
