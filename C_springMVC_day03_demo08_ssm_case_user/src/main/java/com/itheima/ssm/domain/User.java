@@ -4,7 +4,7 @@ package com.itheima.ssm.domain;
  * @ClassName User
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/22 14:33
  * @Version V1.0
  */

@@ -6,7 +6,7 @@ import java.sql.*;
  * @ClassName TestJdbc
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/14 10:41
  * @Version V1.0
  */

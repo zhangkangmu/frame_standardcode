@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * @ClassName JdbcTemplateDemo1
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/18 10:48
  * @Version V1.0
  */

@@ -7,7 +7,7 @@ import com.itheima.service.impl.AccountServiceImpl;
  * @ClassName StaticFactroy
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/14 15:39
  * @Version V1.0
  */

@@ -20,7 +20,7 @@ import java.util.Properties;
  * @ClassName SettingCenterUtils
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/28 10:19
  * @Version V1.0
  */

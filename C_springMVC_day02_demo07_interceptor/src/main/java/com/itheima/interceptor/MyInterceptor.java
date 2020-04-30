@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * @ClassName MyInterceptor
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/20 16:07
  * @Version V1.0
  */

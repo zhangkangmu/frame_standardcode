@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
  * @ClassName LoginInterceptor
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/22 16:12
  * @Version V1.0
  */

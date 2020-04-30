@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * @ClassName SysExceptionHandler
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/20 15:37
  * @Version V1.0
  */

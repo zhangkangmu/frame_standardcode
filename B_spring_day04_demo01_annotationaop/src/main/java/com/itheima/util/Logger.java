@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @ClassName Logger
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/16 14:47
  * @Version V1.0
  */

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @ClassName HelloController
  * @Description TODO
  * @Author ly
- * @Company 深圳黑马程序员
+ *
  * @Date 2020/3/19 9:58
  * @Version V1.0
  */
