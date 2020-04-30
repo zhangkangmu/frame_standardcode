@@ -24,7 +24,7 @@ import java.net.UnknownHostException;
  * @version 1.0
  * @date 2020-4-29
  */
-public class ElastecsearchTest {
+public class Demo01_ElastecsearchTest {
 
     private TransportClient client;
 
