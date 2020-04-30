@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * RabbitMQ入门
  * 完成消费者-路由模式
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.mq.simple
  * @date 2020-4-26

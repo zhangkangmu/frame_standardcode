@@ -1,7 +1,7 @@
 package com.itheima.pojo;
 
 /**
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.pojo
  * @date 2020-4-22

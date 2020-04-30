@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
 /**
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima
  * @date 2020-4-22

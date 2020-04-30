@@ -5,7 +5,7 @@ import org.springframework.core.type.AnnotationMetadata;
 
 /**
  * 实现ImportSelector完成把javabean导入到spring容器中
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.config
  * @date 2020-4-22

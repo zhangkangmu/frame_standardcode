@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Feign日志级别配置类
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.feign.conf
  * @date 2020-4-25

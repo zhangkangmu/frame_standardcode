@@ -5,7 +5,7 @@ import com.itheima.feign.UserClient;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.feign.fallback
  * @date 2020-4-25

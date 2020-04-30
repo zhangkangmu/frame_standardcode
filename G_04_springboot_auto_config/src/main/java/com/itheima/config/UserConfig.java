@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.config
  * @date 2020-4-22

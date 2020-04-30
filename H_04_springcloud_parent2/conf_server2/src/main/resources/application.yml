@@ -9,7 +9,7 @@ spring:
       server:
         git:
           # 配置gitee的仓库地址
-          uri: https://gitee.com/StevenBlake/conf.git
+          uri: https://gitee.com/zhangyuhongBlake/conf.git
   # rabbitmq的配置信息；如下配置的rabbit都是默认值，其实可以完全不配置
   rabbitmq:
     host: localhost

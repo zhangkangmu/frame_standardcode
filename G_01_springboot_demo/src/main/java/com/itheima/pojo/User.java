@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.pojo
  * @date 2020-4-21

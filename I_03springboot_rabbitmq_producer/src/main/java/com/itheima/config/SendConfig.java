@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * 配置RabbitMQ相关信息
  * 队列名、交换机、队列绑定交换机
  * 演示通配符案例
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.config
  * @date 2020-4-26

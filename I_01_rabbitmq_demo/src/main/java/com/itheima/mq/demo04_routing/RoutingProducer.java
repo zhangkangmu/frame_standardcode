@@ -8,7 +8,7 @@ import com.rabbitmq.client.Connection;
 /**
  * RabbitMQ入门案例-生产者
  * 演示路由模式MQ消息
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.mq.simple
  * @date 2020-4-26

@@ -18,7 +18,7 @@ public class IthimaAdminClientApplication {
 
         @RequestMapping("/findById")
         public String findById() {
-            return "Steven小哥哥";
+            return "zhangyuhong小哥哥";
         }
     }
 

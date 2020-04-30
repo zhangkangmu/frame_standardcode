@@ -25,9 +25,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
- * @description com.itheima.test
  * @date 2020-4-29
  */
 public class ElastecsearchTest {

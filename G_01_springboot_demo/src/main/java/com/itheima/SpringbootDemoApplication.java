@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * SpringBoot起步引导类
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @date 2020-4-21
  */

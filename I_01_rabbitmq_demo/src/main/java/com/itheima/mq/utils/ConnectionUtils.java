@@ -5,7 +5,7 @@ import com.rabbitmq.client.ConnectionFactory;
 
 /**
  * RabbitMQ连接工具抽取
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.mq.utils
  * @date 2020-4-26

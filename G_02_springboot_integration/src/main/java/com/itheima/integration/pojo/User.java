@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 用户信息业务实体
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.integration.pojo
  * @date 2020-4-21

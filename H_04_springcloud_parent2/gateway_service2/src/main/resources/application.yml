@@ -29,7 +29,7 @@ spring:
       #默认过滤器-全局配置
       default-filters:
         # 往响应过滤器中加入响应头信息,三部分组成,AddResponseHeader=key,values
-        - AddResponseHeader=X-Response-Default-MyName,Steven
+        - AddResponseHeader=X-Response-Default-MyName,zhangyuhong
         - AddResponseHeader=small-gril,Lucy
         #- StripPrefix=1  # 去除路径前缀过滤器，一个"/"识别为一个路径
 

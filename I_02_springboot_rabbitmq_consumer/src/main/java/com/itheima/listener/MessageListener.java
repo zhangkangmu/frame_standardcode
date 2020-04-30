@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 入门SpringBoot集成RabbitMQ消费者
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.itheima.listener
  * @date 2020-4-26

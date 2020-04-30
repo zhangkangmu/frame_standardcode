@@ -10,7 +10,7 @@ import org.springframework.core.type.AnnotationMetadata;
 
 /**
  * 实现ImportBeanDefinitionRegistrar接口把javabean添加到spirng容器中
- * @author Steven
+ * @author zhangyuhong
  * @version 1.0
  * @description com.config
  * @date 2020-4-22
