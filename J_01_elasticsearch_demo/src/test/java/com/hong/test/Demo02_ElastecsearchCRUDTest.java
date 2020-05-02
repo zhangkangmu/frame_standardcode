@@ -45,6 +45,8 @@ import java.util.Map;
  * @version 1.0
  * @description com.itheima.test
  * @date 2020-4-29
+ *
+ * 不要漏了get()了,代表执行方法
  */
 public class Demo02_ElastecsearchCRUDTest {
 
@@ -236,6 +238,7 @@ public class Demo02_ElastecsearchCRUDTest {
             //1.4.3.3. 方案三：直接使用update()修改文档
             ActionFuture<UpdateResponse> response = client.update(new UpdateRequest("blog2", "article", "2")
                     .doc(mapper.writeValueAsString(article), XContentType.JSON));
+            //注意,这里要get,不能直接输出response,不然就是一个地址而已了
             System.out.println(response.get());
         } catch (Exception e) {
             e.printStackTrace();
@@ -262,6 +265,8 @@ public class Demo02_ElastecsearchCRUDTest {
      */
     @Test
     public void testBulkCreate() {
+        //不能直接 List<Article> articles = new ArrayList<>();100条,然后用testJackJsonMapper一样的方法存进去
+        //会报NotSerializableExceptionWrapper异常,因为setSource不支持list的json
         try {
             //创建批量导入构建器
             BulkRequestBuilder bulkRequestBuilder = client.prepareBulk();
@@ -322,11 +327,13 @@ public class Demo02_ElastecsearchCRUDTest {
                 //.setQuery(QueryBuilders.wildcardQuery("title","*8")).get();
 
                 //5.相似度查询(失真查询)：QueryBuilders.fuzzyQuery(域名, 查询条件)，容错两个字母以内
+                // 默认查10条,不区分大小写,但是查的字符串最好加.toLowerCase()
                 //.setQuery(QueryBuilders.fuzzyQuery("title", "elasticseaaah")).get();
                 //中文一个字占两个位
                 //.setQuery(QueryBuilders.fuzzyQuery("content", "服务哥")).get();
 
                 //6.范围匹配查询(数值、时间)-QueryBuilders.rangeQuery(域名).from(开始).to(结束)
+                //包含0和5,所以0-5是6条记录
                 //.setQuery(QueryBuilders.rangeQuery("id").from(0).to(5)).get();
 
                 //7.组合查询-QueryBuilders.boolQuery().组合方式(must、mustNot、should)
@@ -334,7 +341,7 @@ public class Demo02_ElastecsearchCRUDTest {
                 //mustNot：必须同时不成立 NOT
                 //should：或者的意思 OR
                 .setQuery(QueryBuilders.boolQuery()
-                        //追加第一个条件
+                        //追加第一个条件,注意:分词
                         .must(QueryBuilders.queryStringQuery("elasticsearch搜").field("title"))
                         //追加第二个条件
                         .mustNot(QueryBuilders.rangeQuery("id").from(0).to(5))
@@ -371,7 +378,7 @@ public class Demo02_ElastecsearchCRUDTest {
                 )
                 //分页条件
                 .setFrom(0) //setFrom(起始行号)-类似于mysql limmit(0,5) 中的0
-                .setSize(5)  //setSize(每页查询的条数)
+                .setSize(5)  //setSize(每页查询的条数)  查询出来的还是全部,但是只是显示很少而已
                 //设置排序-addSort(域名, 排序方式【SortOrder.ASC，SortOrder.DESC】)
                 .addSort("id", SortOrder.ASC)
                 //执行查询
@@ -442,7 +449,11 @@ public class Demo02_ElastecsearchCRUDTest {
                 //HighlightField titleHighlight = highlightFields.get("content");
                 String title = "";
                 //提取碎片
+                //什么是碎片:比如说百度搜索下的内容的尖端介绍,那就是碎片
                 for (Text fragment : titleHighlight.getFragments()) {
+
+
+
                     title += fragment;
                 }
                 //把无高亮的title换成高亮数据
