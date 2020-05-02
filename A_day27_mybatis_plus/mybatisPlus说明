@@ -1,0 +1,19 @@
+1.逻辑更新插入和更新日期
+    1.1 实体类中字段使用 @TableField 注解
+    1.2 实现MetaObjectHandler,配置自动更新
+2.乐观锁  解决线程安全,多并发情况(需要select和uplate的时候带上一个版本号的字段)
+    2.1 数据库中有一个字段version代表版本号
+    2.1 实体类中增加一个字段version代表版本号,并使用@Version注解
+    2.3 创建配置文件 ,@Configuration,@EnableTransactionManagement,@MapperScan("扫描mapper的路径"),@Bean声明OptimisticLockerInterceptor乐观锁插件
+3.项目都一般都要逻辑删除
+    3.1 在数据库中增加一个字段deleted 为boolean类型(tinyint)
+    3.2 实体类添加deleted 字段  @TableLogic 注解 和 @TableField(fill = FieldFill.INSERT) 注解
+    3.3 配置类文件(MybatisPlusConfig)中注入ISqlInjector对象
+    3.4 在配置文件中增加配置
+        mybatis-plus.global-config.db-config.logic-delete-value=1
+        mybatis-plus.global-config.db-config.logic-not-delete-value=0
+4.sql性能分析插件--可以配置执行多少毫秒就报异常,提示优化sql
+    4.1 配置类文件(MybatisPlusConfig)中注入PerformanceInterceptor,并配置信息
+    4.2 Spring Boot 中设置dev,test,pro环境
+5.复杂条件查询，那么需要使用条件构造器 Wapper,看QueryWrapperTests.class
+
