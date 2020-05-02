@@ -10,6 +10,7 @@ import java.util.Date;
  * Date:2020/4/30
  */
 @Data
+@TableName(value = "user_demo")
 public class User {
     @TableId(type = IdType.ID_WORKER)
     private Long id;
