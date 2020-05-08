@@ -1,9 +1,8 @@
-package com.itheima.test;
+package com.hong.test;
 
-import com.itheima.dao.ArticleDao;
-import com.itheima.pojo.Article;
-import com.itheima.service.ArticleService;
-import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
+import com.hong.dao.ArticleDao;
+import com.hong.pojo.Article;
+import com.hong.service.ArticleService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

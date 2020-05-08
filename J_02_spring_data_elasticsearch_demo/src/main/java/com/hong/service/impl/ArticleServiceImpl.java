@@ -1,8 +1,8 @@
-package com.itheima.service.impl;
+package com.hong.service.impl;
 
-import com.itheima.dao.ArticleDao;
-import com.itheima.pojo.Article;
-import com.itheima.service.ArticleService;
+import com.hong.dao.ArticleDao;
+import com.hong.pojo.Article;
+import com.hong.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

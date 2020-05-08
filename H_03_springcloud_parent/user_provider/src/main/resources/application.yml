@@ -18,13 +18,13 @@ eureka:
     registry-fetch-interval-seconds: 30
 
   instance:
-    #指定IP地址
+    #指定IP地址  我被别人访问的时候应该拿到的ip
     ip-address: 127.0.0.1
     #访问服务的时候，推荐使用IP
     prefer-ip-address: true
     #租约到期，服务时效时间，默认值90秒,就是等待90秒看是否有有响应
     lease-expiration-duration-in-seconds: 150
-    #租约续约间隔时间，默认30秒
+    #租约续约间隔时间，默认30秒,就是150秒内  30秒发一次请求,5次请求都没有响应才剔除
     lease-renewal-interval-in-seconds: 30
 
 

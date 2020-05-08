@@ -1,6 +1,5 @@
-package com.itheima.pojo;
+package com.hong.pojo;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;

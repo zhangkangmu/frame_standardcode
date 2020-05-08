@@ -1,10 +1,6 @@
-package com.itheima.service;
+package com.hong.service;
 
-import com.itheima.pojo.Article;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
-import java.util.List;
+import com.hong.pojo.Article;
 
 /**
  * 文章信息业务逻辑接口

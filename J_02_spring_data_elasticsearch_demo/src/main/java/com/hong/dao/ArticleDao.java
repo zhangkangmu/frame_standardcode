@@ -1,6 +1,6 @@
-package com.itheima.dao;
+package com.hong.dao;
 
-import com.itheima.pojo.Article;
+import com.hong.pojo.Article;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

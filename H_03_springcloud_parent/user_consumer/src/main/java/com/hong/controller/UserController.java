@@ -23,7 +23,7 @@ import org.springframework.web.client.RestTemplate;
 public class UserController {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private RestTemplate restTemplate;//RestTemplate是Rest的HTTP客户端模板工具类
 
     @Autowired
     private DiscoveryClient discoveryClient; //DiscoveryClient用于从eureka中获取服务实例列表

@@ -17,6 +17,7 @@ eureka:
     # 每隔30获取服务列表(只读备份)
     registry-fetch-interval-seconds: 30
 
+#不用配的,自动就有
   instance:
     #指定IP地址
     ip-address: 127.0.0.1
