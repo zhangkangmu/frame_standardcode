@@ -46,7 +46,7 @@ public class JpqlTest {
     @Transactional //添加事务的支持
     @Rollback(value = false)
     public void testUpdateCustomer() {
-        customerDao.updateCustomer(4l,"黑马程序员");
+        customerDao.updateCustomer(4l,"程序员");
     }
 
     //测试sql查询
