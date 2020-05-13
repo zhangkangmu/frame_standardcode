@@ -1,0 +1,5 @@
+server:
+  port: 8002
+spring:
+  thymeleaf:
+    cache: false  # 默认是true 有缓存

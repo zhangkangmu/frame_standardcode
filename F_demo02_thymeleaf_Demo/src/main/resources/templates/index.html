@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--有两个传来,那就以最新的为准-->
+单个值:
+<span th:text="${message}"></span> <br>
+-----------------------------------<br>
+对象:<br>
+id:<span th:text="${person.id}"></span><br>
+name:<span th:text="${person.name}"></span><br>
+-----------------------------------<br>
+集合列表<br>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>index</td>
+    </tr>
+    <!--
+    abc:取出来的每一个对象
+    myStat:代表每一个对象状态
+    -->
+    <tr th:each="abc,myStat:${list}">
+        <td th:text="${abc.id}"></td>
+        <td th:text="${abc.name}"></td>
+        <td th:text="${myStat.index+1}"></td>
+    </tr>
+</table>
+----------------------------------------<br>
+<div th:each="myentry:${map}">
+    key:<span th:text="${myentry.key}"></span><br>
+    value:<span th:text="${myentry.value}"></span>
+</div>
+----------------------------------------<br>
+<a th:href="@{/test/index(a=${canshu},b=${canshu})}">去首页哈哈哈</a>
+<br>
+----------------------------------------<br>
+<!--#：代表内置对象-->
+输入日期为：
+<span th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></span>
+<br>
+----------------------------------------<br>
+<div th:if="${age}>=18">年龄大于18</div>
+<br>
+<button onclick="login()">javascript内联</button>
+<br>
+
+<!--thymeleaf的内联-->
+<script th:inline="javascript">
+    var age=[[${age}]];
+    function login() {
+        alert(age);
+    }
+</script>
+
+
+<br>
+</body>
+</html>
