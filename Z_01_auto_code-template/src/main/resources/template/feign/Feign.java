@@ -20,7 +20,7 @@ public interface ${Table}Feign {
      * @return
      */
     @PostMapping(value = "/search/{page}/{size}" )
-    Result<PageInfo> findPage(@RequestBody(required = false) ${Table} ${table}, @PathVariable  int page, @PathVariable  int size);
+    Result<PageInfo> findPage(@RequestBody(required = false) ${Table} ${table}, @PathVariable(name="page")  int page, @PathVariable(name="size")  int size);
 
     /***
      * ${Table}分页搜索实现
@@ -29,7 +29,7 @@ public interface ${Table}Feign {
      * @return
      */
     @GetMapping(value = "/search/{page}/{size}" )
-    Result<PageInfo> findPage(@PathVariable  int page, @PathVariable  int size);
+    Result<PageInfo> findPage(@PathVariable(name="page")  int page, @PathVariable(name="size")  int size);
 
     /***
      * 多条件搜索品牌数据
@@ -45,7 +45,7 @@ public interface ${Table}Feign {
      * @return
      */
     @DeleteMapping(value = "/{id}" )
-    Result delete(@PathVariable ${keyType} id);
+    Result delete(@PathVariable(name="id") ${keyType} id);
 
     /***
      * 修改${Table}数据
@@ -54,7 +54,7 @@ public interface ${Table}Feign {
      * @return
      */
     @PutMapping(value="/{id}")
-    Result update(@RequestBody ${Table} ${table},@PathVariable ${keyType} id);
+    Result update(@RequestBody ${Table} ${table},@PathVariable(name="id") ${keyType} id);
 
     /***
      * 新增${Table}数据
@@ -70,7 +70,7 @@ public interface ${Table}Feign {
      * @return
      */
     @GetMapping("/{id}")
-    Result<${Table}> findById(@PathVariable ${keyType} id);
+    Result<${Table}> findById(@PathVariable(name="id") ${keyType} id);
 
     /***
      * 查询${Table}全部数据
