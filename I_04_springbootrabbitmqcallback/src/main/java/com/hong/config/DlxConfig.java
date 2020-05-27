@@ -22,6 +22,7 @@ public class DlxConfig {
     //可以使用默认的交换机
     @Bean
     public Queue queueDLX() {
+        //死信队列配置
         return QueueBuilder.durable("queue_demo_dlx")
                 .withArgument("x-message-ttl",10000)  //设置队列过期时间为10秒
                 .withArgument("x-dead-letter-exchange","exchange_direct_dlx")  //设置死信交换机

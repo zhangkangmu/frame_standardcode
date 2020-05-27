@@ -18,7 +18,7 @@ public class MessageListener {
      * @param msg 接收到的消息内容
      */
     //告诉SpringBoot我们以下方法，监听个队列
-    @RabbitListener(queues = "topic_queue_springboot")
+    @RabbitListener(queues = "topic_queue_springboot")  //也可以放在类前面
     public void topicListener(String msg) {
         System.out.println("收到SpringBoot整合RabbitMQ的消息：" + msg);
     }

@@ -5,7 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * TTL过期消息配置
+ * TTL过期消息配置  ---存活时间/过期时间,超时）
+ * 当消息到达存活时间后，还没有被消费，会被自动清除。
  * @author zhangyuhong
  * @version 1.0
  * @description com.hong.config

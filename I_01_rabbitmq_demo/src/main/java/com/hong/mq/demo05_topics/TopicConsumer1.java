@@ -47,7 +47,6 @@ public class TopicConsumer1 {
                             ",exchange:" + exchange +
                             ",deliveryTag:" + deliveryTag +
                             ",消息体内容为:" + msg);
-
                 }
             };
 
