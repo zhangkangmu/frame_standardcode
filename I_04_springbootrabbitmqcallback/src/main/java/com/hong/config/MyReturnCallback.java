@@ -24,7 +24,7 @@ public class MyReturnCallback implements RabbitTemplate.ReturnCallback {
     @Override
     public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
         System.out.println("----------------------------------------------------");
-        System.out.println("消息从交换机转到队列时发生了异常...内容如下：");
+        System.out.println("消息从交换机springboot_demo转到队列时发生了异常...内容如下：");
         System.out.println("消息体内容：" + new String(message.getBody()));
         System.out.println("错误代码：" + replyCode);
         System.out.println("错误消息：" + replyText);
