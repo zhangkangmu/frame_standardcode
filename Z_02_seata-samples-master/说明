@@ -1,0 +1,19 @@
+1.到时候连的是本地数据库,但是数据源是代理数据源决定
+2.指定tc事务协调器(配置pc:意思就是说奖rm和pc连接在一起,也就是微服务和事务协调器连接在一起),是用这个文件registry.conf(在每隔rm微服务里增加就好),
+    里面配置了file.conf,file.conf里面;配置了分组和tc的ip地址和端口号  ,yml里指定spring.cloud.alibaba.seata.tx-service-group的tc分组
+3.service里要配置@GlobalTransactional  开启全局事务,配置了这个就会自动生成一个xid(undo_log表里也有这个字段)
+
+4.需要生成的日志数据表
+CREATE TABLE `undo_log` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `branch_id` bigint(20) NOT NULL,
+  `xid` varchar(100) NOT NULL,
+  `context` varchar(128) NOT NULL,
+  `rollback_info` longblob NOT NULL,
+  `log_status` int(11) NOT NULL,
+  `log_created` datetime NOT NULL,
+  `log_modified` datetime NOT NULL,
+  `ext` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ux_undo_log` (`xid`,`branch_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
