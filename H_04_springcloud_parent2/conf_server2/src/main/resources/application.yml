@@ -1,4 +1,4 @@
-# 注释版本
+# 注释版本   config服务端
 server:
   port: 18085 # 端口号
 spring:

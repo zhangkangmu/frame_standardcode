@@ -33,4 +33,17 @@
             <result property="address" column="address"/>
         </association>
     </resultMap>
+
+    <!--
+        <select id="addQuestionQueryCompany" resultMap="queryCompany">
+SELECT id,short_name,city_id cityId FROM t_company
+    </select>
+    <resultMap id="queryCompany" type="Company">
+        <id property="id" column="id"></id>
+        <result property="shortName" column="short_Name"></result>
+        <collection property="industryList" ofType="Industry"
+                    select="com.hong.mm.dao.IndustryDao.addQuestionQueryCompany2Industry"   //连接另外一个sql
+                    column="id"/>
+    </resultMap>
+    -->
 </mapper>

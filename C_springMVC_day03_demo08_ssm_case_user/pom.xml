@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hong</groupId>
-    <artifactId>springmvc_day03_user</artifactId>
+    <artifactId>C_springMVC_day03_demo08_ssm_case_user</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>war</packaging>

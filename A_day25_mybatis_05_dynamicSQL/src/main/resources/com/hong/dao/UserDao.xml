@@ -14,7 +14,7 @@
     <!--<select id="search" parameterType="user" resultType="user">
         select * from user where 1=1
         <if test="username != null and username != '' ">
-            and username like #{username}
+            and username like #{usQuartz ername}
         </if>
         <if test="sex != null and sex != ''">
             and sex = #{sex}
