@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 
 /**
  * 文章信息业务实体
- * @Document 标识为一个ES业务实体(indexName:索引库名称，type:类型名称)
+ * @Document 标识为一个ES业务实体(indexName:索引库名称，type:类型名称,shards:分片的数量,replicas:复制的数量)
  * @Id 绑定属性为文档id,一般情况下，我们使用数据库查询到的主键作为ES的文档id
  * @Field 绑定普通域的内容{
  *     type:域的数据类型
