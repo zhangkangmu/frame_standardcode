@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr} # 指定的是注册中心的ip和port
+        namespace: name-dev001 # 注册的时候注册到命名空间为name-dev001
+      server-addr: localhost:8848
+      config:
+        server-addr: ${spring.cloud.nacos.server-addr} # 指定的是配置中心的ip和端口
+        file-extension: yaml  # 默认是properties 如果配置中心的配置文件的后缀是yaml 就配置yaml
+        namespace: name-dev001 # 读取配置项的时候从命名空间为name-dev001 下读取
+        group: GROUP02 # 设置分组
+  application:
+    name: nacos-client1
+#  profiles:
+#    active: test

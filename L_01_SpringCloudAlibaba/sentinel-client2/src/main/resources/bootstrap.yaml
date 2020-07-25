@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: sentinel-client2
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8719  # 端口配置 默认就是8791  内置的http服务的端口 用于接收控制台推送过来的信息 规则，让规则生效
+        dashboard: localhost:8080  # 控制台的ip地址和端口
+      eager: true # 饥饿加载 启动就初始化
+
+      datasource:
+        ds1:  # 设置数据源的名称
+          nacos: # 设置使用的数据源类型 使用nacos
+            server-addr: localhost:8848
+            dataId: sentinel-client2 # 数据ID值
+            groupId: DEFAULT_GROUP
+            data-type: json   # 数据格式是JSON
+            rule-type: flow  #流控类型
+server:
+  port: 9002
+feign:
+  sentinel:
+    enabled: true # feign集成sentinel
+
+
+
