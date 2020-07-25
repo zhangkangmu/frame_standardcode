@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--<aop:aspectj-autoproxy/>-->
+    <!--
+        aop:config->aop配置
+    -->
+    <!--<aop:config>
+        <aop:pointcut id="pointcut1" expression="execution(* com.itheima.dao.impl.*.*(..))"/>
+        <aop:aspect ref="myAspect" >
+            <aop:before method="before" pointcut-ref="pointcut1"/>
+            <aop:after-returning method="after" pointcut-ref="pointcut1"/>
+            <aop:after-throwing method="throwing" pointcut-ref="pointcut1" throwing="e"/>
+            <aop:after method="finallys" pointcut-ref="pointcut1"/>
+            &lt;!&ndash;<aop:around method="around" pointcut-ref="pointcut1"/>&ndash;&gt;
+        </aop:aspect>
+    </aop:config>-->
+</beans>

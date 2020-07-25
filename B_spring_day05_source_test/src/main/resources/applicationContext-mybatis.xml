@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    ">
+
+    <!--3.配置SqlSessionFactoryBean，可以获取qlSessionFactory-->
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--1.datasource配置-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--2.mybatis核心配置文件-->
+        <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
+        <!--3.xml映射文件的读取，目的是将xml中的sql节点读取到内存里面-->
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:mappers/*</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--4.MapperScannerConfigurer的配置，目的是将接口的代理类注册到spring容器里面-->
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.itheima.dao"/>
+    </bean>
+</beans>

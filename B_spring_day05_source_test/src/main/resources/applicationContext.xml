@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd
+">
+    <!--<context:component-scan base-package="com.itheima.config,com.itheima.service"/>
+    <bean name="testStr,testStr2;testStr3 testStr4" class="com.itheima.TestStr">
+        <property name="testStr" value="hello"/>
+    </bean>
+
+    &lt;!&ndash;简单的线程池&ndash;&gt;
+    <task:executor id="myexecutor" pool-size="5"  />
+    <task:annotation-driven executor="myexecutor"/>
+    <bean id="userFactory" class="com.itheima.domain.UserFactory"/>
+    <bean id="myBeanFactoryPostProcessor" class="com.itheima.config.MyBeanFactoryPostProcessor"/>-->
+    <bean name="testAware" class="com.itheima.aware.TestAware"/>
+
+    <bean name="beanFactoryPostPorcesserTest" class="com.itheima.bfpp.BeanFactoryPostPorcesserTest"/>
+
+    <bean name="beanPostProcesserTest" class="com.itheima.bpp.BeanPostProcesserTest"/>
+    <!--直接创建javabean-->
+    <bean name="user2,user3 user4;user5" class="com.itheima.domain.User" init-method="init">
+        <property name="name" value="zs"/>
+    </bean>
+
+    <!--静态工厂-->
+    <bean name="user1" init-method="init" class="com.itheima.factory.UserFactoryStatic" factory-method="getUser">
+        <property name="name" value="zs"/>
+    </bean>
+
+    <!--非静态工厂-->
+    <bean id="userFactory" class="com.itheima.factory.UserFactory"/>
+
+    <bean name="user6" factory-method="getUser" factory-bean="userFactory" init-method="init">
+        <property name="name" value="zs"/>
+    </bean>
+
+    <bean id="teacher" class="com.itheima.domain.Teacher" scope="prototype">
+        <property name="subject" value="spring源码课程"/>
+    </bean>
+
+  <!--  <bean id="classRoom" class="com.itheima.domain.ClassRoom" autowire="constructor"/>
+
+    <bean id="classRoom2" class="com.itheima.domain.ClassRoom" autowire="constructor"/>-->
+
+    <!--<import resource="applicationContext-aop.xml"/>
+    <import resource="applicationContext-tx.xml"/>
+    <import resource="applicationContext-mybatis.xml"/>-->
+    <!--<import resource="applicationContext-mvc.xml"/>-->
+</beans>
