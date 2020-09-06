@@ -4,9 +4,12 @@ import com.hong.domain.Account;
 import com.hong.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * @ClassName HelloController
@@ -70,5 +73,15 @@ public class ParamController {
         System.out.println("response:"+response);
         System.out.println("欢迎执行ParamController类中的testServlet方法！name:"+request.getParameter("name"));
         return "success";
+    }
+
+//    接收list参数
+    @ResponseBody
+    @RequestMapping("test")
+    public void test(@RequestParam(value="list",required = false) List<Integer> list) {
+        for (Integer integer : list) {
+            System.out.println(integer);
+        }
+
     }
 }

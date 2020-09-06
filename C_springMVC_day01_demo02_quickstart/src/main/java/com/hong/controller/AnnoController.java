@@ -25,6 +25,7 @@ public class AnnoController {
 
     /**
      * 4.1 @RequestParam注解
+     * 前端传递的变量和后端接收的变量名字不一致时,用注解@RequestParam来实现数据的传递
      * 属性：
      * value：请求参数中的名称。
      * required：请求参数中是否必须提供此参数。默认值：true。表示必须提供，如果不提供将报错。

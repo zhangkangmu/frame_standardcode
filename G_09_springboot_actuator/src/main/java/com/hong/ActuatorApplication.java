@@ -22,7 +22,8 @@ public class ActuatorApplication {
     @RestController
     @RequestMapping("test")
     class TestController{
-
+        //指定返回格式
+//        @GetMapping(value = "/user",produces = {"application/json;charset=UTF-8"})
         @GetMapping("hello")
         public String hello() {
             return "Hello Actuator...";
