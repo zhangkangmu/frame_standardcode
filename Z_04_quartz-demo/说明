@@ -1,0 +1,29 @@
+集群版  定时任务
+原博客参考
+https://blog.csdn.net/qiangzi1103/article/details/102759260
+原代码chapter10
+https://github.com/gh-liu/spring-boot-study
+
+
+使用方式:用postman发送post请求
+http://localhost:8080/startJob
+jobClass:执行逻辑的全限定类名
+jobDataMap:元数据,可以通过jobExecutionContext取出
+{
+ 	"name":"zhang",
+    "goup":"group1",
+    "cron":"0/5 * * * * ?",
+    "desc":"这是第一个定时任务demo",
+    "jobClass":"com.example.jobs.ZyhJob",
+    "jobDataMap":{
+        "userName":"张宇洪",
+        "password":"123456"
+    }
+}
+
+介绍表:
+qrtz_triggers表
+trigger_status:
+ACQUIRED  正在执行中
+PAUSING  暂停状态
+ERROR  错误(一般是多个程序同时在抢夺逻辑类)
