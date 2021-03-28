@@ -9,15 +9,31 @@
     每个environment：可以配置一个数据库的环境
     environments标签的default属性：指定一个默认使用的数据库环境
     -->
-    <environments default="heima87">
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+    <typeHandlers>
+        <!--枚举转换器-->
+        <!--自定义类型转换器-->
+        <!--<typeHandler handler="com.hong.config.MyEnumSexTypeHandler"-->
+                     <!--javaType="com.hong.domain.EnumSex"/>-->
+        <!-- 将枚举实例中的ordinal属性作为取值,即 SexEunm.MAN 变成0 -->
+        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"
+                     javaType="com.hong.domain.EnumSex"/>
+        <!--  将枚举实例转成枚举名称,即SexEunm.MAN 变成MAN-->
+        <!--<typeHandler handler="com.hong.config.MyEnumSexTypeHandler"-->
+                     <!--javaType="com.hong.domain.EnumSex"/>-->
+    </typeHandlers>
+
+    <environments default="hong_demo">
         <!--配置一个数据库环境-->
-        <environment id="heima87">
+        <environment id="hong_demo">
             <!--事务管理：固定值JDBC-->
             <transactionManager type="JDBC"/>
             <!--数据源：type值有  POOLED，UNPOOLED，JNDI-->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql:///mybatiscase"/>
+                <property name="url" value="jdbc:mysql:///test"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>

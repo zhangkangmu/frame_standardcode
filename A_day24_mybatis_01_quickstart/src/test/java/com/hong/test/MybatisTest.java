@@ -1,6 +1,7 @@
 package com.hong.test;
 
 import com.hong.dao.UserDao;
+import com.hong.domain.EnumSex;
 import com.hong.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

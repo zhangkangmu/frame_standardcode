@@ -14,6 +14,6 @@ public class User {
     private Integer id;
     private String username;
     private Date birthday;
-    private String sex;
+    private EnumSex sex;
     private String address;
 }
