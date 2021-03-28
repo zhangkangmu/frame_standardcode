@@ -17,3 +17,7 @@
     4.2 Spring Boot 中设置dev,test,pro环境
 5.复杂条件查询，那么需要使用条件构造器 Wapper,看QueryWrapperTests.class
 
+6.配置枚举
+    6.1增加注解扫描包  mybatis-plus.type-enums-package=com.hong.entity
+    6.2实体类上使用枚举,注意,实体要继承IEnum,重写的getValue是决定插入的是什么值,而查询返回的是整个实体对象
+
