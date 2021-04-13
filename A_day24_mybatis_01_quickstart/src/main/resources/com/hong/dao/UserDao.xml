@@ -21,4 +21,28 @@ mapper标签：
     <select id="queryAll" resultType="com.hong.domain.User">
         select * from user
     </select>
+
+    <insert id="insertUser" parameterType="com.hong.domain.User">
+        insert into user(user_Name, birthday, sex, ADDRESS)
+        values
+        <foreach collection="list" separator="," item="user">
+            (#{user.userName},current_date,
+            #{user.sex,javaType=com.hong.domain.EnumSex,typeHandler=org.apache.ibatis.type.EnumOrdinalTypeHandler},
+            #{user.address})
+        </foreach>
+    </insert>
+
+    <!--有值就不插入,没有就插入  注意:插入的值必须有一个字段是唯一的,或者有唯一索引-->
+    <insert id="insertDiffData" parameterType="com.hong.domain.User">
+        insert ignore  user2 (id, user_Name, birthday, sex, ADDRESS)
+        values (11,'zhang4', '2021-04-14', 0, '广州')
+    </insert>
+
+    <!--注意:replace into 跟这个类似,但是有坑,他是有重复值的话先删除再插入-->
+    <!--有值就不更新,没有就插入  注意:插入的值必须有一个字段是唯一的,或者有唯一索引-->
+    <insert id="insertDiffAndUpdData" parameterType="com.hong.domain.User">
+       insert into user(id,user_Name, birthday, sex, ADDRESS) values
+        (81,'zhang2',current_date,0,'广州')
+        on duplicate key update birthday=DATE_ADD(CURDATE(), INTERVAL 1 day )
+    </insert>
 </mapper>

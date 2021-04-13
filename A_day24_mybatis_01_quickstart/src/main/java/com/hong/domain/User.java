@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 public class User {
     private Integer id;
-    private String username;
+    private String userName;
     private Date birthday;
     private EnumSex sex;
     private String address;

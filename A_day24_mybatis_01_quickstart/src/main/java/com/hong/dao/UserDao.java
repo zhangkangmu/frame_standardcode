@@ -13,4 +13,12 @@ public interface UserDao {
     List<User> queryAll();
 
     /*User findById(Integer id);*/
+
+    void insertUser(List<User> list);
+
+    void insertDiffData(List<User> list);
+
+    void insertDiffData(User user);
+
+    void insertDiffAndUpdData(User user);
 }
