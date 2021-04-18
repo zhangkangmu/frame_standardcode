@@ -1,0 +1,3 @@
+亮点在这里：AllException，里面有一个封装了返回错误页面，还有一个错误的json格式数据
+
+ExceptionController手动制作了错误
