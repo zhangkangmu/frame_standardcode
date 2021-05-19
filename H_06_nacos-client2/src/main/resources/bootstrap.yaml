@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+#      server-addr: localhost:8848
+      server-addr: 192.168.211.132:1111
+  application:
+    name: nacos-client2

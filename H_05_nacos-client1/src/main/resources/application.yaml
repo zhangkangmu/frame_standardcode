@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: nacos-client1
+server:
+  port: 9001
+
