@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
  * @author Administrator
  * @version 1.0
  **/
+
 @Component
 @RocketMQMessageListener(topic = "my-topic",consumerGroup="demo-consumer-group")
 public class ConsumerSimple implements RocketMQListener<String> {
@@ -16,6 +17,6 @@ public class ConsumerSimple implements RocketMQListener<String> {
     public void onMessage(String msg) {
         //此方法被调用表示接收到消息，msg形参就是消息内容
         //处理消息...
-        System.out.println(msg);
+        System.out.println("my-topic:"+msg);
     }
 }
