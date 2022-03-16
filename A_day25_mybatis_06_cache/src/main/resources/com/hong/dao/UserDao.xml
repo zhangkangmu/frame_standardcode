@@ -3,8 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hong.dao.UserDao">
+    <!--这个映射器配置文件开启二级缓存-->
     <cache/>
 
+    <!--useCache 使用缓存-->
     <select id="findById" parameterType="int" resultType="user" useCache="true">
         select * from user where id = #{uid}
     </select>

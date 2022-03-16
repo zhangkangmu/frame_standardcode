@@ -22,8 +22,8 @@
         <package name="com.hong.domain"/>
     </typeAliases>
 
-    <environments default="heima87">
-        <environment id="heima87">
+    <environments default="hong">
+        <environment id="hong">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>

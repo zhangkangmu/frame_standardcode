@@ -1,1 +1,5 @@
 mybatisPlus的代码生成器
+需要更改的地方
+CodeGenerator.java
+1.更改数据源(3、数据源配置)
+此代码仅限于moduleName(变量)_开头的表,如果表没有前缀,需要把 4、包配置下的

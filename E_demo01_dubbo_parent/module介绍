@@ -1,0 +1,6 @@
+zookeeper做注册中心
+启动程序要启动下面三个
+1.本地启动zookeeper服务端
+2.用maven自带的tomcat启动provider,后再启动consumer
+
+注意:启动后,zookeeper里会生成两个节点,一个是服务提供者,一个是服务消费者,重点是在spring-dubbo.xml里配置的

@@ -7,7 +7,7 @@
     <settings>
         <!--开启 懒加载的全局开关-->
         <setting name="lazyLoadingEnabled" value="true"/>
-        <!--关闭 积极加载-->
+        <!--关闭 积极加载, 关闭后就是按需加载了-->
         <setting name="aggressiveLazyLoading" value="false"/>
     </settings>
 

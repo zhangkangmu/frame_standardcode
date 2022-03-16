@@ -15,7 +15,7 @@ public class GeneratorSqlmap {
 		boolean overwrite = true;
 		//指定 逆向工程配置文件(需要改成自己的磁盘的路径)
 		//要改的人地方
-		File configFile = new File("H:\\javaProject\\lianxi\\MyBatisGenerator\\src\\main\\resources\\generatorConfig.xml");
+		File configFile = new File("H:\\javaProject\\frame_standardcode\\A_day26_mybatis_11_MyBatisGenerator\\src\\main\\resources\\generatorConfig.xml");
 		ConfigurationParser cp = new ConfigurationParser(warnings);
 		Configuration config = cp.parseConfiguration(configFile);
 		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
